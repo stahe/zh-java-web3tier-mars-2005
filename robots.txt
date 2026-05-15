@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://stahe.github.io/zh-java-web3tier-mars-2005/sitemap.xml
