@@ -12,13 +12,13 @@
         <meta name="author" content="Serge Tahé">
       
       
-        <link rel="canonical" href="https://stahe.github.io/zh-java-web3tier-mars-2005/i-1-ian---spring-ioc.html">
+        <link rel="canonical" href="https://stahe.github.io/zh-java-web3tier-mars-2005/i-1-hang---spring-ioc.html">
       
       
         <link rel="prev" href="ianie.html">
       
       
-        <link rel="next" href="i2iao---anengwebiaouhii.html">
+        <link rel="next" href="i-2-iao---aneng-web-iaouhii.html">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>2. 第 1 篇 - Spring IoC - 基于Struts、Spring和Java的三层架构与MVC架构</title>
+        <title>2. 第 1 章 - Spring IoC - 基于Struts、Spring和Java的三层架构与MVC架构</title>
       
     
     
@@ -56,6 +56,8 @@
     
     
       <link rel="stylesheet" href="stylesheets/focus.css">
+    
+      <link rel="stylesheet" href="stylesheets/bidi.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -128,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2. 第 1 篇 - Spring IoC
+              2. 第 1 章 - Spring IoC
             
           </span>
         </div>
@@ -346,7 +348,7 @@
   <span class="md-ellipsis">
     
   
-    2. 第 1 篇 - Spring IoC
+    2. 第 1 章 - Spring IoC
   
 
     
@@ -357,14 +359,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="i-1-ian---spring-ioc.html" class="md-nav__link md-nav__link--active">
+      <a href="i-1-hang---spring-ioc.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. 第 1 篇 - Spring IoC
+    2. 第 1 章 - Spring IoC
   
 
     
@@ -393,7 +395,7 @@
   <a href="#21-spring" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1. 使用 Spring 配置三层应用程序
+        2.1. 使用 Spring 配置三层应用
       
     </span>
   </a>
@@ -415,12 +417,12 @@
   <a href="#23-spring-ioc" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.3. Spring IoC 实践
+        2.3. Spring IoC 实战应用
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2.3. Spring IoC 实践">
+    <nav class="md-nav" aria-label="2.3. Spring IoC 实战应用">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -465,19 +467,19 @@
   <a href="#24-spring-web" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.4. Spring 用于配置三层 Web 应用程序
+        2.4. 使用 Spring 配置三层 Web 应用程序
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2.4. Spring 用于配置三层 Web 应用程序">
+    <nav class="md-nav" aria-label="2.4. 使用 Spring 配置三层 Web 应用程序">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#241" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.4.1. 通用应用程序架构
+        2.4.1. 应用程序的总体架构
       
     </span>
   </a>
@@ -488,7 +490,7 @@
   <a href="#242-dao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.4.2. DAO数据访问层
+        2.4.2. 数据访问层 DAO
       
     </span>
   </a>
@@ -566,7 +568,7 @@
   <a href="#2463-istiastdemodomain" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.4.6.3. [istia.st.demo.domain] 包
+        2.4.6.3. [istia.st.demo.domain] 软件包
       
     </span>
   </a>
@@ -577,7 +579,7 @@
   <a href="#2464-istiastdemocontrol" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.4.6.4. 包 [istia.st.demo.control]
+        2.4.6.4. [istia.st.demo.control] 包
       
     </span>
   </a>
@@ -588,7 +590,7 @@
   <a href="#2465-spring" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.4.6.5. [Spring] 配置文件
+        2.4.6.5. 配置文件 [Spring]
       
     </span>
   </a>
@@ -617,10 +619,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#25" class="md-nav__link">
+  <a href="#25-conclusion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.5. 结论
+        2.5. Conclusion
       
     </span>
   </a>
@@ -642,14 +644,14 @@
   
   
     <li class="md-nav__item">
-      <a href="i2iao---anengwebiaouhii.html" class="md-nav__link">
+      <a href="i-2-iao---aneng-web-iaouhii.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    3. 第2条 - 三层Web架构示例
+    3. 第 2 条 - 三层 Web 架构示例
   
 
     
@@ -696,14 +698,14 @@
   
   
     <li class="md-nav__item">
-      <a href="uu.html" class="md-nav__link">
+      <a href="uian.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    5. 附录
+    5. 附件
   
 
     
@@ -733,26 +735,28 @@
 
 
 
-<h1 id="2-1-spring-ioc">2. <span style="color: #365f91">第 1 篇 - Spring IoC</span></h1>
-<p><strong>本文的目标</strong>：</p>
+<h1 id="2-1-spring-ioc">2. <span style="color: #365f91">第 1 章 - Spring IoC</span></h1>
+<p><strong>本文目标</strong>：</p>
 <ul>
-<li>探讨 Spring 框架（http://www.springframework.org）的配置与集成可能性</li>
-<li>定义并应用 IoC（控制反转）概念，亦称为依赖注入</li>
+  <li>探索 Spring 框架（http://www.springframework.org）的配置与集成可能性
+  </li>
+  <li>定义并应用 IoC（控制反转，Inversion of Control）的概念，也称为依赖注入（Dependency Injection）
+  </li>
 </ul>
-<h2 id="21-spring">2.1. <span style="color: #4f81bd">使用 Spring 配置三层应用程序</span></h2>
-<p>考虑一个典型的三层应用程序：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006EA0000010B3D100DAD.png" width="680" height="103" style="display:inline-block; margin:4px;width:17.997cm;height:2.715cm;" class="odt-zoomable" data-zoom-src="images/10000000000006EA0000010B3D100DAD.png" /></td></tr></table>
 
-<p>我们将假设对业务层和DAO层的访问由Java接口控制：</p>
+<h2 id="21-spring">2.1. <span style="color: #4f81bd"><strong>使用 Spring 配置三层应用</strong></span></h2>
+<p>考虑一个典型的三层应用程序：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000006EA0000010B3D100DAD.png" width="680" height="103" style="display:inline-block; margin:4px;width:17.997cm;height:2.715cm;" class="odt-zoomable" data-zoom-src="images/10000000000006EA0000010B3D100DAD.png" /></td></tr></table>
+
+<p>假设对业务层和DAO的访问由Java接口控制：</p>
 <ol>
-<li>数据访问层的 [IArticlesDao] 接口</li>
-</ol>
-<ol start="2">
-  <li>业务层的 [IArticlesManager] 接口
+  <li>用于数据访问层的接口 [IArticlesDao]
+  </li>
+  <li>业务层接口 [IArticlesManager]
   </li>
 </ol>
 
-<p>在数据访问层（即 DAO 层）中，通常需要与数据库管理系统（DBMS）配合使用，因此会用到 JDBC 驱动程序。以下是一个访问 DBMS 中 articles 表的类的基本框架：</p>
+<p>在数据访问层（即 DAO 层，即数据访问对象）中，通常会使用 SGBD，因此也会使用 JDBC 驱动程序。 以下是一个在 SGBD 中访问物料表的类框架：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
@@ -778,7 +782,7 @@
 <span class="normal"><a href="#__codelineno-0-23">23</a></span>
 <span class="normal"><a href="#__codelineno-0-24">24</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ArticlesDaoPlainJdbc</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">IArticlesDao</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">     </span><span class="c1">// connection to data source</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">     </span><span class="c1">// 连接到数据源</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">driverClassName</span><span class="o">=</span><span class="kc">null</span><span class="p">;</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Connection</span><span class="w"> </span><span class="n">connexion</span><span class="o">=</span><span class="kc">null</span><span class="p">;</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
@@ -787,11 +791,11 @@
 <a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w"> </span><span class="p">....</span>
 <a id="__codelineno-0-10" name="__codelineno-0-10"></a>
 <a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">List</span><span class="w"> </span><span class="nf">getAllArticles</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">        </span><span class="c1">// the list of items is requested</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">        </span><span class="c1">// 查询商品列表</span>
 <a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">             </span><span class="c1">// load the JDBC driver</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">             </span><span class="c1">// 加载驱动程序 JDBC</span>
 <a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">            </span><span class="n">Class</span><span class="p">.</span><span class="na">forName</span><span class="p">(</span><span class="n">driverClassName</span><span class="p">);</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">            </span><span class="c1">// create a connection to BD</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">            </span><span class="c1">// 建立连接至 BD</span>
 <a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">            </span><span class="n">connexion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DriverManager</span><span class="p">.</span><span class="na">getConnection</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="n">pwd</span><span class="p">);</span>
 <a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">            </span><span class="p">...</span>
 <a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">SQLException</span><span class="w"> </span><span class="n">ex</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -801,23 +805,23 @@
 <a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="w">        </span><span class="p">}</span>
 <a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="w">    </span><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p>要在 DBMS 上执行操作，每个方法都需要一个 [Connection] 对象，该对象代表与数据库的连接，数据将通过该连接在数据库和 Java 代码之间进行交换。要创建此对象，需要以下四项信息：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<p>要在 SGBD 上执行操作，任何方法都需要一个 [Connection] 对象，该对象代表与数据库的连接，数据库与 Java 代码之间的数据交换将通过此连接进行。要构建该对象，需要以下四项信息：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>String driverClassName
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">DBMS JDBC 驱动程序类的名称</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">JDBC驱动程序的类名SGBD</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>String url
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">要使用的数据库的 JDBC URL</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">要使用的数据库的 URL</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>String user
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">用于建立连接的凭据</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">用于建立连接的用户名</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>String pwd
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">该用户名的密码</div></td></tr></table>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">该身份的密码</div></td></tr></table>
 
-<p>我们之前的 [ArticlesDaoPlainJdbc] 类如何获取此信息？有几种可能：</p>
-<p><strong>方案 1</strong> - 该信息硬编码在类中：</p>
+<p>我们之前的 [ArticlesDaoPlainJdbc] 类如何获取这些信息？有以下几种可能：</p>
+<p><strong>方案 1</strong> - 信息硬编码在类中：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
 <span class="normal"><a href="#__codelineno-5-2">2</a></span>
 <span class="normal"><a href="#__codelineno-5-3">3</a></span>
@@ -827,15 +831,15 @@
 <span class="normal"><a href="#__codelineno-5-7">7</a></span>
 <span class="normal"><a href="#__codelineno-5-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">ArticlesDaoPlainJdbc</span><span class="w"> </span><span class="n">implements</span><span class="w"> </span><span class="n">IArticlesDao</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="w">     </span><span class="c1">// connection to data source</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="w">     </span><span class="c1">// 连接到数据源</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">driverClassName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;org.firebirdsql.jdbc.FBDriver&quot;</span><span class="p">;</span>
 <a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;jdbc:firebirdsql:localhost/3050:d:/databases/dbarticles.gdb&quot;</span><span class="p">;</span>
 <a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;someone&quot;</span><span class="p">;</span>
 <a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">pwd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;somepassword&quot;</span><span class="p">;</span>
 <a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="w"> </span><span class="p">....</span>
 </code></pre></div></td></tr></table></div>
-<p>这种方案的缺点在于，每当这些信息发生变化时（例如更改密码），你都必须修改 Java 代码。</p>
-<p><strong>方案 2</strong> - 在对象构造时将信息传递给对象：</p>
+<p>此方案的缺点在于，一旦信息发生变更（例如密码更改），就必须修改Java代码。</p>
+<p><strong>方案 2</strong> - 信息在对象构造时传递给该对象：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
@@ -852,7 +856,7 @@
 <span class="normal"><a href="#__codelineno-6-14">14</a></span>
 <span class="normal"><a href="#__codelineno-6-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">ArticlesDaoPlainJdbc</span><span class="w"> </span><span class="n">implements</span><span class="w"> </span><span class="n">IArticlesDao</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2"></a>
-<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="w">     </span><span class="c1">// connection to data source</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="w">     </span><span class="c1">// 连接到数据源</span>
 <a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">driverClassName</span><span class="p">;</span>
 <a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">url</span><span class="p">;</span>
 <a id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">user</span><span class="p">;</span>
@@ -866,8 +870,8 @@
 <a id="__codelineno-6-14" name="__codelineno-6-14"></a><span class="w">    </span><span class="p">...</span>
 <a id="__codelineno-6-15" name="__codelineno-6-15"></a><span class="w">    </span><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p>在此，对象在构造时便获得了运行所需的信息。问题便转移到了传递这四项信息的代码上：它是如何获取这些信息的？业务层中的以下类 [ArticlesManagerWithDataBase] 可以从数据访问层构造一个 [ArticlesDaoPlainJdbc] 对象：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000574000000DCCE9FF2AB.png" width="680" height="107" style="display:inline-block; margin:4px;width:17.997cm;height:2.836cm;" class="odt-zoomable" data-zoom-src="images/1000000000000574000000DCCE9FF2AB.png" /></td></tr></table>
+<p>在此，对象在构造时会接收其运行所需的信息。问题便转移到了向其传递这四项信息的代码上。它是如何获得这些信息的？业务层的下一个类 [ArticlesManagerWithDataBase] 可能会构造数据访问层的对象 [ArticlesDaoPlainJdbc]：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000574000000DCCE9FF2AB.png" width="680" height="107" style="display:inline-block; margin:4px;width:17.997cm;height:2.835cm;" class="odt-zoomable" data-zoom-src="images/1000000000000574000000DCCE9FF2AB.png" /></td></tr></table>
 
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-7-2"> 2</a></span>
@@ -886,12 +890,12 @@
 <span class="normal"><a href="#__codelineno-7-15">15</a></span>
 <span class="normal"><a href="#__codelineno-7-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">ArticlesManagerWithDataBase</span><span class="w"> </span><span class="n">implements</span><span class="w"> </span><span class="n">IArticlesManager</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-7-2" name="__codelineno-7-2"></a>
-<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="w">    </span><span class="c1">// a data access instance</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="w">    </span><span class="c1">// 一个数据访问实例</span>
 <a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">IArticlesDao</span><span class="w"> </span><span class="n">articlesDao</span><span class="p">;</span>
 <a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="w"> </span><span class="p">....</span>
 <a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">ArticlesManagerWithDataBase</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">driverClassName</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">pwd</span><span class="p">,</span><span class="w"> </span><span class="p">...)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="w">        </span><span class="p">...</span><span class="w"> </span>
-<a id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="w">         </span><span class="c1">// creation of a data access service</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="w">         </span><span class="c1">// 创建数据访问服务</span>
 <a id="__codelineno-7-9" name="__codelineno-7-9"></a><span class="w">        </span><span class="n">articlesDao</span><span class="w"> </span><span class="o">=</span><span class="p">(</span><span class="n">IArticlesDao</span><span class="p">)</span><span class="k">new</span><span class="w"> </span><span class="n">ArticlesDaoPlainJdbc</span><span class="p">(</span><span class="n">driverClassName</span><span class="p">,</span><span class="n">url</span><span class="p">,</span><span class="n">user</span><span class="p">,</span><span class="n">pwd</span><span class="p">);</span>
 <a id="__codelineno-7-10" name="__codelineno-7-10"></a><span class="w">    </span><span class="p">...</span>
 <a id="__codelineno-7-11" name="__codelineno-7-11"></a><span class="w">    </span><span class="p">}</span>
@@ -901,8 +905,8 @@
 <a id="__codelineno-7-15" name="__codelineno-7-15"></a><span class="w">    </span><span class="p">}</span>
 <a id="__codelineno-7-16" name="__codelineno-7-16"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p>我们可以看到，构建 [ArticlesDaoPlainJdbc] 对象所需的信息再次被传递给了 [ArticlesManagerWithDataBase] 对象的构造函数。我们可以设想，这些信息是由更高层（例如用户界面层）传递给它的。因此，我们逐渐到达了应用程序的最高层。 由于其位置，该层不会被能够向其传递所需配置信息的层所调用。因此，我们必须寻找基于构造函数配置的替代方案。在应用程序最高层进行配置的标准方法是使用一个包含所有可能随时间变化的信息的文件。此类文件可能有多个。在应用程序启动时，初始化层将创建应用程序各层所需的所有或部分对象。</p>
-<p>配置文件种类繁多。当前的趋势是使用 XML 文件。Spring 采用的就是这种方法。配置 [ArticlesDaoPlainJdbc] 对象的文件可能如下所示：</p>
+<p>可见，在此处，构建对象 [ArticlesDaoPlainJdbc] 所需的信息同样被提供给了对象 [ArticlesManagerWithDataBase] 的构造函数。可以设想，这些信息是由上一层（例如用户界面层）传递给它的。 就这样，我们一步步追溯到了应用程序的最高层。由于其位置，该层不会被能够向其传递所需配置信息的层所调用。 因此必须寻找除构造函数配置之外的替代方案。在应用程序最高层进行配置的常规做法是使用配置文件，其中包含所有可能随时间变化的信息。此类文件可能有多个。应用程序启动时，初始化层将创建应用程序各层所需的所有或部分对象。</p>
+<p>配置文件种类繁多。当前的趋势是使用 XML 文件。这是 Spring 采用的方案。配置 [ArticlesDaoPlainJdbc] 对象的文件可能如下所示：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-8-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-8-3"> 3</a></span>
@@ -924,7 +928,7 @@
 <span class="normal"><a href="#__codelineno-8-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
 <a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="cp">&lt;!DOCTYPE beans SYSTEM &quot;http://www.springframework.org/dtd/spring-beans.dtd&quot;&gt;</span>
 <a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="nt">&lt;beans&gt;</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="w">     </span><span class="cm">&lt;!-- data access class --&gt;</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="w">     </span><span class="cm">&lt;!-- 数据访问类 --&gt;</span>
 <a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="w">    </span><span class="nt">&lt;bean</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;articlesDao&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;istia.st.articles.dao.ArticlesDaoPlainJdbc&quot;</span><span class="nt">&gt;</span>
 <a id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="w">        </span><span class="nt">&lt;constructor-arg</span><span class="w"> </span><span class="na">index=</span><span class="s">&quot;0&quot;</span><span class="nt">&gt;</span>
 <a id="__codelineno-8-7" name="__codelineno-8-7"></a><span class="w">            </span><span class="nt">&lt;value&gt;</span>org.firebirdsql.jdbc.FBDriver<span class="nt">&lt;/value&gt;</span>
@@ -941,11 +945,11 @@
 <a id="__codelineno-8-18" name="__codelineno-8-18"></a><span class="w">    </span><span class="nt">&lt;/bean&gt;</span>
 <a id="__codelineno-8-19" name="__codelineno-8-19"></a><span class="nt">&lt;/beans&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p>应用程序是一组对象，Spring 将其称为 <strong>Bean</strong>，因为它们遵循 JavaBean 标准，即为对象的私有字段的访问器和初始化器（getter/setter）命名。 应用程序中用于实现特定功能的对象通常以单实例形式创建，这类对象被称为<strong>单例（singleton</strong>）。因此，在我们此处讨论的多层应用程序示例中，对文章数据库的访问将由 [ArticlesDaoPlainJdbc] 类的单个实例来处理。对于 Web 应用程序，这些服务对象会同时为多个客户端提供服务，而非为每个客户端单独创建一个服务对象。</p>
-<p>上面的 Spring 配置文件允许在名为 [istia.st.articles.dao] 的包中创建一个类型为 [ArticlesDaoPlainJdbc] 的服务对象。该对象构造函数所需的四项信息定义在 <strong>&lt;bean&gt;...&lt;/bean&gt;</strong> 标签内。此类 <strong>&lt;bean&gt;</strong> 标签的数量将与需要创建的单例数量相同。</p>
-<p>Spring 配置文件中定义的对象何时会被创建？如果应用程序有 <strong>main</strong> 方法，则可以通过该方法处理应用程序的初始化。对于 Web 应用程序，这可能是主 Servlet 的 [<strong>init</strong>] 方法。每个应用程序都有一个保证最先执行的方法。通常，单例的创建就在该方法中进行。</p>
-<p>让我们举个例子。假设我们要使用 JUnit 测试来测试前面的 [ArticlesDaoPlainJdbc] 类。JUnit 测试类有一个 [<strong>setUp</strong>] 方法，该方法会在其他任何方法之前执行。我们将在这里创建 [ArticlesDaoPlainJdbc] 单例。</p>
-<p>如果采用通过构造函数传递配置信息的方法，我们将得到如下测试类：</p>
+<p>应用程序是一组对象，Spring 将其<strong>称为</strong> Bean，因为它们遵循 JavaBean 标准，该标准规定了对象私有字段的访问器（getter/setter）命名规则。在应用程序中，那些负责提供服务的对象通常只创建一个实例。 这类对象被称为<strong>单例</strong>。因此，在我们此处探讨的多层应用程序示例中，对商品数据库的访问将由 [ArticlesDaoPlainJdbc] 类的唯一实例来处理。对于 Web 应用程序，这些服务对象会同时为多个客户端提供服务。我们不会为每个客户端创建一个服务对象。</p>
+<p>上面的 Spring 配置文件允许在名为 [istia.st.articles.dao] 的包中创建一个 [ArticlesDaoPlainJdbc] 类型的唯一服务对象。 该对象构造器所需的四项信息定义在 <strong>&lt;bean&gt;...&lt;/bean&gt;</strong> 标签内。需要构建的单例有多少，就应有相应数量的 <strong>&lt;bean&gt;</strong> 标签。</p>
+<p>Spring配置文件中定义的对象何时进行构建？应用程序的初始化工作通常由该应用程序的<strong>main</strong>方法负责（如果该应用程序包含main方法）。对于Web应用程序，则可能由主Servlet的[init]方法负责。 在任何应用程序中，都存在一个必定最先执行的方法。通常，单例的构建就在该方法中进行。</p>
+<p>举个例子。假设我们要使用测试方法 JUnit 来测试前面的类 [ArticlesDaoPlainJdbc]。 测试类 JUnit 包含一个名为 [setUp] 的方法，该方法会在其他所有方法之前执行。我们将在该方法中创建单例 [ArticlesDaoPlainJdbc]。</p>
+<p>如果采用通过构造函数传递配置信息的方案，则测试类如下所示：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-9-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-9-3"> 3</a></span>
@@ -958,22 +962,22 @@
 <span class="normal"><a href="#__codelineno-9-10">10</a></span>
 <span class="normal"><a href="#__codelineno-9-11">11</a></span>
 <span class="normal"><a href="#__codelineno-9-12">12</a></span>
-<span class="normal"><a href="#__codelineno-9-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="n">public</span> <span class="k">class</span><span class="w"> </span><span class="nc">TestArticlesPlainJdbc</span> <span class="n">extends</span> <span class="n">TestCase</span> <span class="p">{</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2"></a>    <span class="o">//</span> <span class="n">tests</span> <span class="n">the</span> <span class="n">ArticlesDaoPlainJdbc</span> <span class="n">item</span> <span class="n">access</span> <span class="k">class</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="w">     </span><span class="err">// </span><span class="nc">the</span> <span class="n">data</span> <span class="n">source</span> <span class="ow">is</span> <span class="n">defined</span> <span class="ow">in</span> <span class="n">sprintest</span>
+<span class="normal"><a href="#__codelineno-9-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">TestArticlesPlainJdbc</span><span class="w"> </span><span class="n">extends</span><span class="w"> </span><span class="n">TestCase</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="w">    </span><span class="c1">// 测试物料访问类ArticlesDaoPlainJdbc</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="w">     </span><span class="c1">// 数据源在sprintest中定义</span>
 <a id="__codelineno-9-4" name="__codelineno-9-4"></a>
-<a id="__codelineno-9-5" name="__codelineno-9-5"></a>     <span class="o">//</span> <span class="n">an</span> <span class="n">instance</span> <span class="n">of</span> <span class="n">the</span> <span class="k">class</span><span class="w"> </span><span class="nc">under</span> <span class="n">test</span>
-<a id="__codelineno-9-6" name="__codelineno-9-6"></a>    <span class="n">private</span> <span class="n">IArticlesDao</span> <span class="n">articlesDao</span><span class="p">;</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="w">     </span><span class="c1">// 被测试类的实例</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">IArticlesDao</span><span class="w"> </span><span class="n">articlesDao</span><span class="p">;</span>
 <a id="__codelineno-9-7" name="__codelineno-9-7"></a>
-<a id="__codelineno-9-8" name="__codelineno-9-8"></a>    <span class="n">protected</span> <span class="n">void</span> <span class="n">setUp</span><span class="p">()</span> <span class="n">throws</span> <span class="ne">Exception</span><span class="p">{</span>
-<a id="__codelineno-9-9" name="__codelineno-9-9"></a>        <span class="o">//</span> <span class="n">retrieves</span> <span class="n">a</span> <span class="n">data</span> <span class="n">access</span> <span class="n">instance</span>
-<a id="__codelineno-9-10" name="__codelineno-9-10"></a>        <span class="n">articlesDao</span> <span class="o">=</span>
-<a id="__codelineno-9-11" name="__codelineno-9-11"></a>            <span class="p">(</span><span class="n">IArticlesDao</span><span class="p">)</span> <span class="n">new</span> <span class="n">ArticlesDaoPlainJdbc</span><span class="p">(</span><span class="s2">&quot;org.firebirdsql.jdbc.FBDriver&quot;</span><span class="p">,</span>
-<a id="__codelineno-9-12" name="__codelineno-9-12"></a>                <span class="s2">&quot;jdbc:firebirdsql:localhost/3050:d:/databases/dbarticles.gdb&quot;</span><span class="p">,</span><span class="s2">&quot;someone&quot;</span><span class="p">,</span><span class="s2">&quot;somepassword&quot;</span><span class="p">);</span>
-<a id="__codelineno-9-13" name="__codelineno-9-13"></a>    <span class="p">}</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8"></a><span class="w">    </span><span class="k">protected</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">setUp</span><span class="p">()</span><span class="w"> </span><span class="n">throws</span><span class="w"> </span><span class="n">Exception</span><span class="p">{</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9"></a><span class="w">        </span><span class="c1">// 获取数据访问实例</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10"></a><span class="w">        </span><span class="n">articlesDao</span><span class="w"> </span><span class="o">=</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11"></a><span class="w">            </span><span class="p">(</span><span class="n">IArticlesDao</span><span class="p">)</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArticlesDaoPlainJdbc</span><span class="p">(</span><span class="s">&quot;org.firebirdsql.jdbc.FBDriver&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12"></a><span class="w">                </span><span class="s">&quot;jdbc:firebirdsql:localhost/3050:d:/databases/dbarticles.gdb&quot;</span><span class="p">,</span><span class="s">&quot;someone&quot;</span><span class="p">,</span><span class="s">&quot;somepassword&quot;</span><span class="p">);</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13"></a><span class="w">    </span><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p>调用类 [TestArticlesPlainJdbc] 必须知道初始化待构建的 [ArticlesDaoPlainJdbc] 单例所需的四项信息。 </p>
-<p>如果采用通过配置文件传递配置信息的方法，我们可以使用上述 Spring 文件编写如下测试类。</p>
+<p>调用类 [TestArticlesPlainJdbc] 必须知道初始化待构建的单例 [ArticlesDaoPlainJdbc] 所需的四项信息。 </p>
+<p>如果采用通过配置文件传递配置信息的方案，使用上述 Spring 配置文件，可能会得到如下测试类：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-10-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-10-3"> 3</a></span>
@@ -985,48 +989,48 @@
 <span class="normal"><a href="#__codelineno-10-9"> 9</a></span>
 <span class="normal"><a href="#__codelineno-10-10">10</a></span>
 <span class="normal"><a href="#__codelineno-10-11">11</a></span>
-<span class="normal"><a href="#__codelineno-10-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="n">public</span> <span class="k">class</span><span class="w"> </span><span class="nc">TestSpringArticlesPlainJdbc</span> <span class="n">extends</span> <span class="n">TestCase</span> <span class="p">{</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2"></a>    <span class="o">//</span> <span class="n">tests</span> <span class="n">the</span> <span class="n">ArticlesDaoJdbc</span> <span class="n">item</span> <span class="n">access</span> <span class="k">class</span>
-<a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="w">     </span><span class="err">// </span><span class="nc">the</span> <span class="n">data</span> <span class="n">source</span> <span class="ow">is</span> <span class="n">defined</span> <span class="ow">in</span> <span class="n">sprintest</span>
+<span class="normal"><a href="#__codelineno-10-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">TestSpringArticlesPlainJdbc</span><span class="w"> </span><span class="n">extends</span><span class="w"> </span><span class="n">TestCase</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="w">    </span><span class="c1">// 测试项目访问类ArticlesDaoJdbc</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="w">     </span><span class="c1">// 数据源在Sprintest中定义</span>
 <a id="__codelineno-10-4" name="__codelineno-10-4"></a>
-<a id="__codelineno-10-5" name="__codelineno-10-5"></a>     <span class="o">//</span> <span class="n">an</span> <span class="n">instance</span> <span class="n">of</span> <span class="n">the</span> <span class="k">class</span><span class="w"> </span><span class="nc">under</span> <span class="n">test</span>
-<a id="__codelineno-10-6" name="__codelineno-10-6"></a>    <span class="n">private</span> <span class="n">IArticlesDao</span> <span class="n">articlesDao</span><span class="p">;</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="w">     </span><span class="c1">// 被测试类的实例</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">IArticlesDao</span><span class="w"> </span><span class="n">articlesDao</span><span class="p">;</span>
 <a id="__codelineno-10-7" name="__codelineno-10-7"></a>
-<a id="__codelineno-10-8" name="__codelineno-10-8"></a>    <span class="n">protected</span> <span class="n">void</span> <span class="n">setUp</span><span class="p">()</span> <span class="n">throws</span> <span class="ne">Exception</span> <span class="p">{</span>
-<a id="__codelineno-10-9" name="__codelineno-10-9"></a>      <span class="o">//</span> <span class="n">retrieves</span> <span class="n">a</span> <span class="n">data</span> <span class="n">access</span> <span class="n">instance</span>
-<a id="__codelineno-10-10" name="__codelineno-10-10"></a>      <span class="n">articlesDao</span> <span class="o">=</span> <span class="p">(</span><span class="n">IArticlesDao</span><span class="p">)</span> <span class="p">(</span><span class="n">new</span> <span class="n">XmlBeanFactory</span><span class="p">(</span><span class="n">new</span> <span class="n">ClassPathResource</span><span class="p">(</span>
-<a id="__codelineno-10-11" name="__codelineno-10-11"></a>          <span class="s2">&quot;springArticlesPlainJdbc.xml&quot;</span><span class="p">)))</span><span class="o">.</span><span class="n">getBean</span><span class="p">(</span><span class="s2">&quot;articlesDao&quot;</span><span class="p">);</span>
-<a id="__codelineno-10-12" name="__codelineno-10-12"></a>    <span class="p">}</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8"></a><span class="w">    </span><span class="k">protected</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">setUp</span><span class="p">()</span><span class="w"> </span><span class="n">throws</span><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9"></a><span class="w">      </span><span class="c1">// 获取数据访问实例</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10"></a><span class="w">      </span><span class="n">articlesDao</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">IArticlesDao</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">XmlBeanFactory</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">ClassPathResource</span><span class="p">(</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11"></a><span class="w">          </span><span class="s">&quot;springArticlesPlainJdbc.xml&quot;</span><span class="p">))).</span><span class="n">getBean</span><span class="p">(</span><span class="s">&quot;articlesDao&quot;</span><span class="p">);</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12"></a><span class="w">    </span><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p>在此，调用类 [TestSpringArticlesPlainJdbc] 无需了解初始化待构建单例所需的任何信息。它只需知道：</p>
+<p>在此情况下，调用类 [TestSpringArticlesPlainJdbc] 无需了解构建该单例所需的初始化信息。它只需知道：</p>
 <ol>
-  <li>[springArticlesPlainJdbc.xml]：上述 Spring 配置文件的名称
+  <li>[springArticlesPlainJdbc.xml]：上文所述的 Spring 配置文件名称
   </li>
-  <li>[articlesDao]：要创建的单例的名称
+  <li>[articlesDao]：待创建单例的名称
   </li>
 </ol>
 
-<p>除了这两个实体之外，对配置文件的任何修改都不会影响 Java 代码。这种配置应用程序对象的方法非常灵活。为了进行自我配置，应用程序只需知道两件事：</p>
+<p>除了上述这两个实体之外，对配置文件的任何修改都不会对 Java 代码产生影响。这种应用程序对象的配置方法非常灵活。为了进行配置，它只需要知道两件事：</p>
 <ul>
-  <li>包含待创建单例定义的 Spring 文件名称
+  <li>包含待构建单例定义的 Spring 文件名
   </li>
-  <li>这些单例的名称，Java 代码将通过这些名称获取与配置文件关联的对象引用
+  <li>这些单例的名称，Java 代码将通过配置文件利用这些名称获取与其关联的对象引用
   </li>
 </ul>
 
 <h2 id="22">2.2. <span style="color: #4f81bd">依赖注入与控制反转</span></h2>
-<p>现在，让我们介绍 Spring 用于配置应用程序的依赖注入概念。控制<strong>反转</strong>（IoC）这一术语也被广泛使用。以我们应用程序业务层中 [ArticlesManagerWithDataBase] 单例的构建为例：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005AA0000011FE2C73955.png" width="680" height="135" style="display:inline-block; margin:4px;width:17.997cm;height:3.561cm;" class="odt-zoomable" data-zoom-src="images/10000000000005AA0000011FE2C73955.png" /></td></tr></table>
+<p>现在我们来介绍 Spring 用于配置应用程序的<strong>依赖注入</strong>（Dependency Injection）概念。该概念也常被称为<strong>控制反转</strong>（Inversion of Control）。让我们以构建应用程序业务层中的单例 [ArticlesManagerWithDataBase] 为例：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005AA0000011FE2C73955.png" width="680" height="135" style="display:inline-block; margin:4px;width:17.997cm;height:3.561cm;" class="odt-zoomable" data-zoom-src="images/10000000000005AA0000011FE2C73955.png" /></td></tr></table>
 
-<p>为了从数据库管理系统（DBMS）中获取数据，业务层必须使用一个实现 [IArticlesDao] 接口的对象提供的服务，例如 [ArticlesDaoPlainJdbc] 类型的对象。[ArticlesManagerWithDataBase] 类的代码可能如下所示：</p>
+<p>为了访问 SGBD 中的数据，业务层必须使用实现 [IArticlesDao] 接口的对象提供的服务，例如 [ArticlesDaoPlainJdbc] 类型的对象。 [ArticlesManagerWithDataBase]类的代码可能如下所示：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">ArticlesManagerWithDataBase</span><span class="w"> </span><span class="n">implements</span><span class="w"> </span><span class="n">IArticlesManager</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">     </span><span class="c1">// a data access instance</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">     </span><span class="c1">// 数据访问实例</span>
 <a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">IArticlesDao</span><span class="w"> </span><span class="n">articlesDao</span><span class="p">;</span>
 <a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w"> </span><span class="p">....</span>
 <a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">ArticlesManagerWithDataBase</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">driverClassName</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">pwd</span><span class="p">,</span><span class="w"> </span><span class="p">...)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">        </span><span class="p">...</span><span class="w"> </span>
-<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">         </span><span class="c1">// creation of a data access service</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">         </span><span class="c1">// 创建数据访问服务</span>
 <a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">        </span><span class="n">articlesDao</span><span class="w"> </span><span class="o">=</span><span class="p">(</span><span class="n">IArticlesDao</span><span class="p">)</span><span class="k">new</span><span class="w"> </span><span class="n">ArticlesDaoPlainJdbc</span><span class="p">(</span><span class="n">driverClassName</span><span class="p">,</span><span class="n">url</span><span class="p">,</span><span class="n">user</span><span class="p">,</span><span class="n">pwd</span><span class="p">);</span>
 <a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">    </span><span class="p">...</span>
 <a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">    </span><span class="p">}</span>
@@ -1036,17 +1040,17 @@
 <a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="w">    </span><span class="p">}</span>
 <a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="p">}</span>
 </code></pre></div>
-<p>[ArticlesDaoPlainJdbc] 类应在此处实现 [IArticlesDao] 接口：</p>
+<p>此处假设类 [ArticlesDaoPlainJdbc] 实现了接口 [IArticlesDao]：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">ArticlesDaoPlainJdbc</span><span class="w"> </span><span class="n">implements</span><span class="w"> </span><span class="n">IArticlesDao</span><span class="w"> </span><span class="p">{...}</span>
 </code></pre></div>
-<p>为了创建该类正常运行所需的 [IArticlesDao] 单例，其构造函数会显式地使用实现 [IArticlesDao] 接口的类名：</p>
+<p>为了创建类运行所需的 [IArticlesDao] 类型的单例，该类的构造函数显式使用了接口 [IArticlesDao] 的实现类名称：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>articlesDao =(IArticlesDao) new ArticlesDaoPlainJdbc(...);
 </code></pre></div>
-<p>因此<strong>，代码中</strong>存在<strong>对类名的硬编码依赖</strong>。如果实现 [IArticlesDao] 接口的类发生变更<strong>，则需要修改</strong>上述构造函数中的代码。对象之间存在以下关系：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000059800000176CCEEEBCB.png" width="680" height="178" style="display:inline-block; margin:4px;width:17.997cm;height:4.701cm;" class="odt-zoomable" data-zoom-src="images/100000000000059800000176CCEEEBCB.png" /></td></tr></table>
+<p><strong>因此，代码中对类名</strong>存在<strong>硬编码依赖</strong>。如果接口 [IArticlesDao] 的实现类发生变更，则上述构造函数的代码<strong>必须进行修改</strong>。对象之间存在以下关系：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000059800000176CCEEEBCB.png" width="680" height="178" style="display:inline-block; margin:4px;width:17.997cm;height:4.699cm;" class="odt-zoomable" data-zoom-src="images/100000000000059800000176CCEEEBCB.png" /></td></tr></table>
 
-<p>[ArticlesManagerWithDataBase] 类会主动创建其所需的 [ArticlesDaoPlainJdbc] 对象。回到“控制反转”这一术语，可以说正是该类掌握着创建所需对象的“控制权”。</p>
-<p>如果我们要为 [ArticlesManagerWithDataBase] 类编写一个 JUnit 测试类，它可能会像这样：</p>
+<p>类 [ArticlesManagerWithDataBase] 会主动创建其所需的对象 [ArticlesDaoPlainJdbc]。回到“控制反转”这一术语，可以说正是它掌握着创建所需对象的“控制权”。</p>
+<p>如果我们要编写一个用于测试类 [ArticlesManagerWithDataBase] 的测试类 JUnit，代码可能如下所示：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-14-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-14-3"> 3</a></span>
@@ -1057,18 +1061,18 @@
 <span class="normal"><a href="#__codelineno-14-8"> 8</a></span>
 <span class="normal"><a href="#__codelineno-14-9"> 9</a></span>
 <span class="normal"><a href="#__codelineno-14-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">TestArticlesManagerWithDataBase</span><span class="w"> </span><span class="n">extends</span><span class="w"> </span><span class="n">TestCase</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="w">    </span><span class="c1">// an instance of the business class under test</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="w">    </span><span class="c1">// 被测业务类的实例</span>
 <a id="__codelineno-14-3" name="__codelineno-14-3"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">IArticlesManager</span><span class="w"> </span><span class="n">articlesManager</span><span class="p">;</span>
 <a id="__codelineno-14-4" name="__codelineno-14-4"></a>
 <a id="__codelineno-14-5" name="__codelineno-14-5"></a><span class="w">    </span><span class="k">protected</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">setUp</span><span class="p">()</span><span class="w"> </span><span class="n">throws</span><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-14-6" name="__codelineno-14-6"></a><span class="w">        </span><span class="c1">// creates an instance of the business class under test</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6"></a><span class="w">        </span><span class="c1">// 创建被测业务类的实例</span>
 <a id="__codelineno-14-7" name="__codelineno-14-7"></a><span class="w">        </span><span class="n">articlesManager</span><span class="w"> </span><span class="o">=</span>
 <a id="__codelineno-14-8" name="__codelineno-14-8"></a><span class="w">            </span><span class="p">(</span><span class="n">IArticlesManager</span><span class="p">)</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArticlesManagerWithDataBase</span><span class="p">(</span><span class="s">&quot;org.firebirdsql.jdbc.FBDriver&quot;</span><span class="p">,</span>
 <a id="__codelineno-14-9" name="__codelineno-14-9"></a><span class="w">                </span><span class="s">&quot;jdbc:firebirdsql:localhost/3050:d:/databases/dbarticles.gdb&quot;</span><span class="p">,</span><span class="s">&quot;someone&quot;</span><span class="p">,</span><span class="s">&quot;somepassword&quot;</span><span class="p">);</span>
 <a id="__codelineno-14-10" name="__codelineno-14-10"></a><span class="w">    </span><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p>该测试类创建了业务类 [ArticlesManagerWithDataBase] 的实例，该业务类又在其构造函数中创建了数据访问类 [ArticlesDaoPlainJdbc] 的实例。</p>
-<p>Spring 的解决方案消除了业务类 [ArticlesManagerWithDataBase] 需要了解其所需数据访问类名称 [ArticlesDaoPlainJdbc] 的需求。这使得在无需修改业务类 Java 代码的情况下，即可更换该类。Spring 支持同时创建两个单例：一个用于数据访问层，另一个用于业务层。Spring 配置文件将定义一个新的 Bean：</p>
+<p>测试类创建了业务类 [ArticlesManagerWithDataBase] 的实例，该业务类又在其构造函数中创建了数据访问类 [ArticlesDaoPlainJdbc] 的实例。</p>
+<p>使用 Spring 的解决方案将消除业务类 [ArticlesManagerWithDataBase] 对所需数据访问类名称 [ArticlesDaoPlainJdbc] 的依赖。这使得在无需修改业务类 Java 代码的情况下即可更换该类。 Spring将同时创建数据访问层和业务层的两个单例。Spring配置文件将定义一个新的Bean：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-15-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-15-3"> 3</a></span>
@@ -1095,7 +1099,7 @@
 <span class="normal"><a href="#__codelineno-15-24">24</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
 <a id="__codelineno-15-2" name="__codelineno-15-2"></a><span class="cp">&lt;!DOCTYPE beans SYSTEM &quot;http://www.springframework.org/dtd/spring-beans.dtd&quot;&gt;</span>
 <a id="__codelineno-15-3" name="__codelineno-15-3"></a><span class="nt">&lt;beans&gt;</span>
-<a id="__codelineno-15-4" name="__codelineno-15-4"></a><span class="w">     </span><span class="cm">&lt;!-- data access class --&gt;</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4"></a><span class="w">     </span><span class="cm">&lt;!-- 数据访问类 --&gt;</span>
 <a id="__codelineno-15-5" name="__codelineno-15-5"></a><span class="w">    </span><span class="nt">&lt;bean</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;articlesDao&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;istia.st.articles.dao.ArticlesDaoPlainJdbc&quot;</span><span class="nt">&gt;</span>
 <a id="__codelineno-15-6" name="__codelineno-15-6"></a><span class="w">        </span><span class="nt">&lt;constructor-arg</span><span class="w"> </span><span class="na">index=</span><span class="s">&quot;0&quot;</span><span class="nt">&gt;</span>
 <a id="__codelineno-15-7" name="__codelineno-15-7"></a><span class="w">            </span><span class="nt">&lt;value&gt;</span>org.firebirdsql.jdbc.FBDriver<span class="nt">&lt;/value&gt;</span>
@@ -1117,7 +1121,7 @@
 <a id="__codelineno-15-23" name="__codelineno-15-23"></a><span class="w">    </span><span class="nt">&lt;/bean&gt;</span>
 <a id="__codelineno-15-24" name="__codelineno-15-24"></a><span class="nt">&lt;/beans&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p>新功能是定义将要创建的业务类单例的 Bean：</p>
+<p>创新之处在于定义待创建业务类单例的 Bean：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>    &lt;bean id=&quot;articlesManager&quot; class=&quot;istia.st.articles.domain.ArticlesManagerWithDataBase&quot;&gt;
 <a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>        &lt;property name=&quot;articlesDao&quot;&gt;
 <a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>            &lt;ref bean=&quot;articlesDao&quot;/&gt;
@@ -1125,9 +1129,9 @@
 <a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>    &lt;/bean&gt;
 </code></pre></div>
 <ol>
-  <li>实现 [articlesManager] Bean 的类定义如下：[ArticlesManagerWithDataBase]
+  <li>实现 Bean [articlesManager] 的类已定义：[ArticlesManagerWithDataBase]
   </li>
-  <li>通过 <b>&lt;property name=&quot;articlesDao&quot;&gt;</b> 标签为该 Bean 的 [articlesDao] 字段赋值。这是在 [ArticlesManagerWithDataBase] 类中定义的字段：
+  <li>Bean 的字段 [articlesDao] 通过标签 <b>&lt;property name=&quot;articlesDao&quot;&gt;</b> 接收值。该字段在类 [ArticlesManagerWithDataBase] 中定义：
   </li>
 </ol>
 
@@ -1144,7 +1148,7 @@
 <span class="normal"><a href="#__codelineno-17-11">11</a></span>
 <span class="normal"><a href="#__codelineno-17-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">ArticlesManagerWithDataBase</span><span class="w"> </span><span class="n">implements</span><span class="w"> </span><span class="n">IArticlesManager</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-17-2" name="__codelineno-17-2"></a>
-<a id="__codelineno-17-3" name="__codelineno-17-3"></a><span class="w">  </span><span class="c1">// data access interface</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3"></a><span class="w">  </span><span class="c1">// 数据访问接口</span>
 <a id="__codelineno-17-4" name="__codelineno-17-4"></a><span class="w">  </span><span class="k">private</span><span class="w"> </span><span class="n">IArticlesDao</span><span class="w"> </span><span class="n">articlesDao</span><span class="p">;</span>
 <a id="__codelineno-17-5" name="__codelineno-17-5"></a>
 <a id="__codelineno-17-6" name="__codelineno-17-6"></a><span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="n">IArticlesDao</span><span class="w"> </span><span class="nf">getArticlesDao</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
@@ -1155,9 +1159,9 @@
 <a id="__codelineno-17-11" name="__codelineno-17-11"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="n">articlesDao</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">articlesDao</span><span class="p">;</span>
 <a id="__codelineno-17-12" name="__codelineno-17-12"></a><span class="w">  </span><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p>要让 [articlesDao] 字段由 Spring 及其 &lt;property&gt; 标签进行初始化，该字段必须遵循 JavaBean 标准，并且必须存在一个 [setArticlesDao] 方法来初始化 [articlesDao] 字段。 请注意，方法名必须与字段名完全一致。同样地，通常会有一个 [get...] 方法用于获取该字段的值。在此处，即为 [getArticlesDao] 方法。在此新版本中，[ArticlesManagerWithDataBase] 类<strong>不再拥有构造函数</strong>。它已不再需要构造函数。</p>
+<p>为了使字段 [articlesDao] 能通过 Spring 及其 &lt;property&gt; 标签进行初始化， 该字段必须遵循 JavaBean 规范，并且必须存在一个 [setArticlesDao] 方法来初始化 [articlesDao] 字段。请注意该方法的名称，它是根据字段名称精确派生而来的。 与此相应，通常还存在一个 [get...] 方法用于获取该字段的值。在此示例中，该方法为 [getArticlesDao]。在此新版本中，[ArticlesManagerWithDataBase] 类<strong>不再拥有构造函数</strong>，因为它已不再需要。</p>
 <ul>
-  <li>Spring 将为其 [articlesDao] 字段赋予的值，即配置文件中定义的 [articlesDao] Bean 的值：
+  <li>Spring将赋予字段[articlesDao]的值，即其配置文件中定义的Bean [articlesDao]的值：
   </li>
 </ul>
 
@@ -1173,19 +1177,19 @@
 <a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/bean&gt;</span>
 </code></pre></div>
 <ul>
-  <li>当 Spring 构建 [ArticlesManagerWithDataBase] 单例时，它也会创建 [ArticlesDaoPlainJdbc] 单例：
+  <li>当 Spring 构建单例 [ArticlesManagerWithDataBase] 时，它也会创建单例 [ArticlesDaoPlainJdbc]：
     <ul>
-      <li>Spring 会建立一个 Bean 的依赖图，并发现 [articlesManager] Bean 依赖于 [articlesDao] Bean
+      <li>Spring 将建立一个 Bean 依赖关系图，并发现 Bean [articlesManager] 依赖于 Bean [articlesDao]
       </li>
-      <li>它将构建 [articlesDao] Bean，即一个类型为 [ArticlesDaoPlainJdbc] 的对象
+      <li>它将构建 Bean [articlesDao]，即类型为 [ArticlesDaoPlainJdbc] 的对象
       </li>
-      <li>随后，它将构建类型为 [ArticlesManagerWithDataBase] 的 [articlesManager] Bean
+      <li>随后，它将构建类型为 [ArticlesManagerWithDataBase] 的 Bean [articlesManager]
       </li>
     </ul>
   </li>
 </ul>
 
-<p>现在，让我们设想一个针对 [ArticlesManagerWithDataBase] 类的 JUnit 测试。它可能如下所示：</p>
+<p>现在假设有一个针对类 [ArticlesManagerWithDataBase] 的测试 JUnit。它可能如下所示：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-20-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-20-3"> 3</a></span>
@@ -1197,33 +1201,33 @@
 <span class="normal"><a href="#__codelineno-20-9"> 9</a></span>
 <span class="normal"><a href="#__codelineno-20-10">10</a></span>
 <span class="normal"><a href="#__codelineno-20-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">TestSpringArticlesManagerWithDataBase</span><span class="w"> </span><span class="n">extends</span><span class="w"> </span><span class="n">TestCase</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-20-2" name="__codelineno-20-2"></a><span class="w">    </span><span class="c1">// test business class [ArticlesManagerWithDataBase]</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2"></a><span class="w">    </span><span class="c1">// 测试业务类[ArticlesManagerWithDataBase]</span>
 <a id="__codelineno-20-3" name="__codelineno-20-3"></a>
-<a id="__codelineno-20-4" name="__codelineno-20-4"></a><span class="w">    </span><span class="c1">// an instance of the business class under test</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4"></a><span class="w">    </span><span class="c1">// 被测试业务类的实例</span>
 <a id="__codelineno-20-5" name="__codelineno-20-5"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">IArticlesManager</span><span class="w"> </span><span class="n">articlesManager</span><span class="p">;</span>
 <a id="__codelineno-20-6" name="__codelineno-20-6"></a>
 <a id="__codelineno-20-7" name="__codelineno-20-7"></a><span class="w">    </span><span class="k">protected</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">setUp</span><span class="p">()</span><span class="w"> </span><span class="n">throws</span><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-20-8" name="__codelineno-20-8"></a><span class="w">      </span><span class="c1">// retrieves a data access instance</span>
+<a id="__codelineno-20-8" name="__codelineno-20-8"></a><span class="w">      </span><span class="c1">// 获取数据访问实例</span>
 <a id="__codelineno-20-9" name="__codelineno-20-9"></a><span class="w">      </span><span class="n">articlesManager</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">IArticlesManager</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">XmlBeanFactory</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">ClassPathResource</span><span class="p">(</span>
 <a id="__codelineno-20-10" name="__codelineno-20-10"></a><span class="w">          </span><span class="s">&quot;springArticlesManagerWithDataBase.xml&quot;</span><span class="p">))).</span><span class="n">getBean</span><span class="p">(</span><span class="s">&quot;articlesManager&quot;</span><span class="p">);</span>
 <a id="__codelineno-20-11" name="__codelineno-20-11"></a><span class="w">    </span><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p>让我们来追踪在名为 [springArticlesManagerWithDataBase.xml] 的 Spring 文件中定义的两个单例的创建过程。 </p>
+<p>让我们追踪一下在名为 [springArticlesManagerWithDataBase.xml] 的 Spring 文件中定义的两个单例的创建过程。 </p>
 <ul>
-  <li>上方的 [setUp] 方法请求名为 [articlesManager] 的 Bean 的引用
+  <li>上文中的 [setUp] 方法请求名为 [articlesManager] 的 Bean 的引用
   </li>
-  <li>Spring 会查询其配置文件，找到 [articlesManager] Bean。如果该 Bean 已被创建，则直接返回该对象（单例）的引用；否则，则创建该 Bean。
+  <li>Spring 查询其配置文件，找到 Bean [articlesManager]。如果该 Bean 已存在，则直接返回该对象（单例）的引用；否则，则创建该 Bean。
   </li>
-  <li>Spring 检测到 [articlesManager] Bean 对 [articlesDao] Bean 的依赖。因此，如果 [articlesDao] 尚未作为单例创建，它将创建类型为 [ArticlesDaoPlainJdbc] 的 [articlesDao] 单例。
+  <li>Spring 检测到 Bean [articlesManager] 对 Bean [articlesDao] 的依赖。 因此，如果 [articlesDao] 类型的单例尚未创建（单例），则会创建该单例。
   </li>
-  <li>它会创建类型为 [ArticlesManagerWithDataBase] 的 [articlesManager] 单例
+  <li>它创建了类型为 [ArticlesManagerWithDataBase] 的单例 [articlesManager]
   </li>
 </ul>
 
-<p>该机制可绘制如下图所示：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004C7000001DEC310E746.png" width="612" height="239" style="display:inline-block; margin:4px;width:16.18cm;height:6.324cm;" class="odt-zoomable" data-zoom-src="images/10000000000004C7000001DEC310E746.png" /></td></tr></table>
+<p>该机制可概括如下：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004C7000001DEC310E746.png" width="612" height="239" style="display:inline-block; margin:4px;width:16.18cm;height:6.324cm;" class="odt-zoomable" data-zoom-src="images/10000000000004C7000001DEC310E746.png" /></td></tr></table>
 
-<p>让我们回顾一下 [ArticlesManagerWithDataBase] 类的框架：</p>
+<p>回顾类 [ArticlesManagerWithDataBase] 的结构：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-21-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-21-3"> 3</a></span>
@@ -1237,7 +1241,7 @@
 <span class="normal"><a href="#__codelineno-21-11">11</a></span>
 <span class="normal"><a href="#__codelineno-21-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">ArticlesManagerWithDataBase</span><span class="w"> </span><span class="n">implements</span><span class="w"> </span><span class="n">IArticlesManager</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-21-2" name="__codelineno-21-2"></a>
-<a id="__codelineno-21-3" name="__codelineno-21-3"></a><span class="w">  </span><span class="c1">// data access interface</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3"></a><span class="w">  </span><span class="c1">// 数据访问接口</span>
 <a id="__codelineno-21-4" name="__codelineno-21-4"></a><span class="w">  </span><span class="k">private</span><span class="w"> </span><span class="n">IArticlesDao</span><span class="w"> </span><span class="n">articlesDao</span><span class="p">;</span>
 <a id="__codelineno-21-5" name="__codelineno-21-5"></a>
 <a id="__codelineno-21-6" name="__codelineno-21-6"></a><span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="n">IArticlesDao</span><span class="w"> </span><span class="nf">getArticlesDao</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
@@ -1248,19 +1252,19 @@
 <a id="__codelineno-21-11" name="__codelineno-21-11"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="n">articlesDao</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">articlesDao</span><span class="p">;</span>
 <a id="__codelineno-21-12" name="__codelineno-21-12"></a><span class="w">  </span><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p>一旦 Spring 完成单例的构建，我们便获得了一个 [ArticlesManagerWithDataBase] 类型的对象，其 [articlesDao] 字段已在不知不觉中被初始化。我们称这为向 [ArticlesManagerWithDataBase] 对象注入了依赖。 我们也称之为控制反转：不再是由 [ArticlesManagerWithDataBase] 对象主动创建其所需的、实现 [IArticlesDao] 接口的对象；而是由顶级应用程序（在初始化时）通过管理对象间的相互依赖关系，负责创建其所需的所有对象。</p>
-<p>通过 Spring 配置文件配置 [ArticlesManagerWithDataBase] 单例的主要好处在于，现在我们无需修改其代码，即可更改 [ArticlesManagerWithDataBase] 类中 [articlesDao] 字段对应的实现类。我们只需在 Spring 配置文件中 [articlesDao] Bean 的定义中更改类名即可：</p>
+<p>在 Spring 完成单例对象的构建后，我们得到一个类型为 [ArticlesManagerWithDataBase] 的对象，其字段 [articlesDao] 已被初始化，而该对象自身并不知晓初始化过程。这被称为向 [ArticlesManagerWithDataBase] 对象注入了依赖。 这也被称为控制反转：不再是由对象 [ArticlesManagerWithDataBase] 主动创建其所需的、实现接口 [IArticlesDao] 的对象， 而是最高级别的应用程序（在初始化时）负责创建其所需的所有对象，并管理这些对象之间的依赖关系。</p>
+<p>通过 Spring 文件配置单例 [ArticlesManagerWithDataBase] 的主要优势在于：现在我们可以更改类 [ArticlesManagerWithDataBase] 中字段 [articlesDao] 对应的实现类，而无需修改该类的代码。 只需在 Spring 文件中修改 [articlesDao] Bean 的定义中的类名即可：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>    &lt;bean id=&quot;articlesDao&quot; class=&quot;istia.st.articles.dao.ArticlesDaoPlainJdbc&quot;&gt;
 <a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>...
 <a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>    &lt;/bean&gt;
 </code></pre></div>
-<p>将变为，例如：</p>
+<p>例如将变为：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>    &lt;bean id=&quot;articlesDao&quot; class=&quot;istia.st.articles.dao.ArticlesDaoIbatisSqlMap&quot;&gt;
 <a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>...
 <a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>    &lt;/bean&gt;
 </code></pre></div>
-<p>[ArticlesManagerWithDataBase]  bean 会与这个新的数据访问类协同工作，而无需知晓其存在。</p>
-<h2 id="23-spring-ioc">2.3. <span style="color: #4f81bd">Spring IoC 实践</span></h2>
+<p>[ArticlesManagerWithDataBase] 这个 Bean 将使用这个新的数据访问类进行工作，而它自己却完全不知道。</p>
+<h2 id="23-spring-ioc">2.3. <span style="color: #4f81bd">Spring IoC 实战应用</span></h2>
 <h3 id="231-1">2.3.1. <span style="color: #4f81bd">示例 1</span></h3>
 <p>考虑以下类：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-24-1"> 1</a></span>
@@ -1305,12 +1309,12 @@
 <a id="__codelineno-24-4" name="__codelineno-24-4"></a><span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">nom</span><span class="p">;</span>
 <a id="__codelineno-24-5" name="__codelineno-24-5"></a><span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
 <a id="__codelineno-24-6" name="__codelineno-24-6"></a>
-<a id="__codelineno-24-7" name="__codelineno-24-7"></a><span class="w">   </span><span class="c1">// person display</span>
+<a id="__codelineno-24-7" name="__codelineno-24-7"></a><span class="w">   </span><span class="c1">// 显示“Personne”</span>
 <a id="__codelineno-24-8" name="__codelineno-24-8"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">toString</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-24-9" name="__codelineno-24-9"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;nom=[&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">nom</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;], age=[&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">age</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;]&quot;</span><span class="p">;</span>
 <a id="__codelineno-24-10" name="__codelineno-24-10"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-24-11" name="__codelineno-24-11"></a>
-<a id="__codelineno-24-12" name="__codelineno-24-12"></a><span class="w">   </span><span class="c1">// init-close</span>
+<a id="__codelineno-24-12" name="__codelineno-24-12"></a><span class="w">   </span><span class="c1">// 初始化-关闭</span>
 <a id="__codelineno-24-13" name="__codelineno-24-13"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">init</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-24-14" name="__codelineno-24-14"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;init personne [&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">toString</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;]&quot;</span><span class="p">);</span>
 <a id="__codelineno-24-15" name="__codelineno-24-15"></a><span class="w">  </span><span class="p">}</span>
@@ -1319,7 +1323,7 @@
 <a id="__codelineno-24-18" name="__codelineno-24-18"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;destroy personne [&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">toString</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;]&quot;</span><span class="p">);</span>
 <a id="__codelineno-24-19" name="__codelineno-24-19"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-24-20" name="__codelineno-24-20"></a>
-<a id="__codelineno-24-21" name="__codelineno-24-21"></a><span class="w">   </span><span class="c1">// getters-setters</span>
+<a id="__codelineno-24-21" name="__codelineno-24-21"></a><span class="w">   </span><span class="c1">// getter-setter</span>
 <a id="__codelineno-24-22" name="__codelineno-24-22"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getAge</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-24-23" name="__codelineno-24-23"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
 <a id="__codelineno-24-24" name="__codelineno-24-24"></a><span class="w">  </span><span class="p">}</span>
@@ -1339,17 +1343,17 @@
 </code></pre></div></td></tr></table></div>
 <p>该类包含：</p>
 <ul>
-  <li>两个私有字段：<b>name </b>和 <b>age</b>
+  <li>两个私有字段 <b>nom </b>和 <b>age</b>
   </li>
-  <li>这两个字段的getter和setter方法
+  <li>这两个字段的读取（get）和写入（set）方法
   </li>
-  <li>一个 <b>toString</b> 方法，用于将 [Person] 对象的值转换为字符串
+  <li><b>一个</b>方法 toString，用于将对象 [Personne] 的值以字符串形式返回
   </li>
-  <li>一个 <b>init</b> 方法，该方法将在 Spring 创建对象时被调用；以及一个 <b>close</b> 方法，该方法将在对象销毁时被调用
+  <li>一个 <b>init</b> 方法，将在 Spring 创建对象时被调用；一个 <b>close</b> 方法，将在对象销毁时被调用
   </li>
 </ul>
 
-<p>要创建 [Person] 类型的对象，我们将使用以下 Spring 文件：</p>
+<p>要创建 [Personne] 类型的对象，我们将使用以下 Spring 文件：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-25-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-25-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-25-3"> 3</a></span>
@@ -1398,15 +1402,15 @@
 </code></pre></div></td></tr></table></div>
 <p>该文件将命名为 <strong>config.xml</strong>。</p>
 <ul>
-  <li>它定义了两个键分别为“person1”和“person2”、类型为[Person]的 Bean
+  <li>它定义了两个键分别为“personne1”和“personne2”、类型为[Personne]的Bean
   </li>
-  <li>它为每个人员初始化了 [name, age] 字段
+  <li>它初始化了每个人的 [nom, age] 字段
   </li>
-  <li>它定义了在对象初始化时调用的方法 [init-method] 以及在对象销毁时调用的方法 [destroy-method]
+  <li>它定义了在初始化对象 [init-method] 时以及销毁对象 [destroy-method] 时需要调用的方法
   </li>
 </ul>
 
-<p>在测试中，我们将使用一个 JUnit 测试类，并逐步向其中添加方法。该类的初始版本如下：</p>
+<p>在测试中，我们将使用一个名为 JUnit 的测试类，并逐步向其中添加方法。该类的初始版本如下：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-26-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-26-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-26-3"> 3</a></span>
@@ -1444,16 +1448,16 @@
 <a id="__codelineno-26-8" name="__codelineno-26-8"></a>
 <a id="__codelineno-26-9" name="__codelineno-26-9"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Tests</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">TestCase</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-26-10" name="__codelineno-26-10"></a>
-<a id="__codelineno-26-11" name="__codelineno-26-11"></a><span class="w">   </span><span class="c1">// bean factory</span>
+<a id="__codelineno-26-11" name="__codelineno-26-11"></a><span class="w">   </span><span class="c1">// Bean工厂</span>
 <a id="__codelineno-26-12" name="__codelineno-26-12"></a><span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="n">ListableBeanFactory</span><span class="w"> </span><span class="n">bf</span><span class="p">;</span>
 <a id="__codelineno-26-13" name="__codelineno-26-13"></a>
-<a id="__codelineno-26-14" name="__codelineno-26-14"></a><span class="w">   </span><span class="c1">// init tests</span>
+<a id="__codelineno-26-14" name="__codelineno-26-14"></a><span class="w">   </span><span class="c1">// 初始化测试</span>
 <a id="__codelineno-26-15" name="__codelineno-26-15"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setUp</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-26-16" name="__codelineno-26-16"></a><span class="w">    </span><span class="n">bf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">XmlBeanFactory</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">ClassPathResource</span><span class="p">(</span><span class="s">&quot;config.xml&quot;</span><span class="p">));</span>
 <a id="__codelineno-26-17" name="__codelineno-26-17"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-26-18" name="__codelineno-26-18"></a>
 <a id="__codelineno-26-19" name="__codelineno-26-19"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">test1</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-26-20" name="__codelineno-26-20"></a><span class="w">    </span><span class="c1">// retrieve [Person] bean keys from the Spring file</span>
+<a id="__codelineno-26-20" name="__codelineno-26-20"></a><span class="w">    </span><span class="c1">// 通过键从 Spring 文件中检索 Bean [Personne]</span>
 <a id="__codelineno-26-21" name="__codelineno-26-21"></a><span class="w">    </span><span class="n">Personne</span><span class="w"> </span><span class="n">personne1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">Personne</span><span class="p">)</span><span class="w"> </span><span class="n">bf</span><span class="p">.</span><span class="na">getBean</span><span class="p">(</span><span class="s">&quot;personne1&quot;</span><span class="p">);</span>
 <a id="__codelineno-26-22" name="__codelineno-26-22"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;personne1=&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">personne1</span><span class="p">.</span><span class="na">toString</span><span class="p">());</span>
 <a id="__codelineno-26-23" name="__codelineno-26-23"></a><span class="w">    </span><span class="n">Personne</span><span class="w"> </span><span class="n">personne2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">Personne</span><span class="p">)</span><span class="w"> </span><span class="n">bf</span><span class="p">.</span><span class="na">getBean</span><span class="p">(</span><span class="s">&quot;personne2&quot;</span><span class="p">);</span>
@@ -1465,27 +1469,27 @@
 </code></pre></div></td></tr></table></div>
 <p>注释：</p>
 <ul>
-  <li>为了获取 [config.xml] 文件中定义的 Bean，我们使用 [ListableBeanFactory] 类型的对象。还有其他类型的对象可以访问 Bean。[ListableBeanFactory] 对象在测试类的 [setUp] 方法中获取，并存储在一个私有变量中。因此，所有测试方法都可以使用它。
+  <li>为了获取在文件 [config.xml] 中定义的 Bean，我们使用类型为 [ListableBeanFactory] 的对象。 还有其他类型的对象可用于访问 Bean。[ListableBeanFactory] 对象是在测试类的 [setUp] 方法中获取的，并存储在一个私有变量中。这样，所有测试方法都可以使用它。
   </li>
-  <li>[config.xml] 文件将放置在应用程序的 [ClassPath] 中，即 Java 虚拟机在查找应用程序引用的类时会搜索的目录之一。使用 [ClassPathResource] 对象在应用程序的 [ClassPath] 中搜索资源，本例中即为 [config.xml] 文件。
+  <li>文件 [config.xml] 将被放置在应用程序 [ClassPath] 的 c.a.d 中，该目录是 Java 虚拟机在查找应用程序引用的类时会搜索的目录之一。 对象 [ClassPathResource] 用于在应用程序的 [ClassPath] 中查找资源，此处即文件 [config.xml]。
   </li>
-  <li>Spring 支持多种格式的配置文件。[XmlBeanFactory] 对象用于解析 XML 格式的配置文件。
+  <li>Spring 可以使用多种格式的配置文件。[XmlBeanFactory] 对象用于解析 XML 格式的配置文件。
   </li>
-  <li>处理 Spring 文件会返回一个 [ListableBeanFactory] 类型的对象，此处为对象 <b>bf</b>。通过该对象，可使用 <b>bf.getBean(C)</b> 获取由键 <b>C</b> 标识的 Bean。
+  <li>解析 Spring 文件会生成一个 [ListableBeanFactory] 类型的对象，此处为对象 <b>bf</b>。利用该对象，可通过 <b>bf.getBean(C)</b> 获取由键 <b>C</b> 标识的 Bean。
   </li>
-  <li>[test1] 方法用于检索并显示键为 &quot;person1&quot; 和 &quot;person2&quot; 的 Bean 的值。
+  <li>方法 [test1] 用于获取并显示键为 &quot;personne1&quot; 和 &quot;personne2&quot; 的 Bean 的值。
   </li>
 </ul>
 
-<p>本应用的 Eclipse 项目结构如下：</p>
-<p><img src="images/10000000000000D5000000D01EFFD79D.png" width="213" height="208" style="width:5.636cm;height:5.503cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000D5000000D01EFFD79D.png" /></p>
+<p>我们应用程序的 Eclipse 项目结构如下：</p>
+<p><img src="images/10000000000000D5000000D01EFFD79D.png" width="213" height="208" style="width:5.636cm;height:5.502cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000D5000000D01EFFD79D.png" /></p>
 <p>注释：</p>
 <ul>
-  <li>[src] 文件夹包含源代码。编译后的代码将放入未在此处显示的 [bin] 文件夹中。
+  <li>文件夹 [src] 包含源代码。编译后的代码将存放在未在此处显示的文件夹 [bin] 中。
   </li>
-  <li>[config.xml] 文件位于 [src] 文件夹的根目录下。项目构建时会自动将其复制到 [bin] 文件夹中，该文件夹属于应用程序的 [ClassPath] 范围。这就是 [ClassPathResource] 对象查找该文件的位置。
+  <li>文件 [config.xml] 位于文件夹 [src] 的根目录下。 项目构建时会自动将其复制到 [bin] 文件夹中，该文件夹属于应用程序的 [ClassPath] 目录。[ClassPathResource] 对象会在此处查找该文件。
   </li>
-  <li>[lib] 文件夹包含应用程序所需的三个 Java 库：
+  <li>[lib]文件夹包含应用程序所需的三个Java库：
     <ol>
         <ul>
           <li><b>commons-logging.jar </b>和 <b>spring-core.jar</b> 用于 Spring 类
@@ -1495,11 +1499,11 @@
         </ul>
     </ol>
   </li>
-  <li>[lib] 文件夹也是应用程序 [ClassPath] 的一部分
+  <li>文件 [lib] 同样属于应用程序的 [ClassPath]
   </li>
 </ul>
 
-<p>执行 JUnit 测试中的 [test1] 方法将产生以下结果：</p>
+<p>执行测试 JUnit 中的方法 [test1] 得到以下结果：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-27-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-27-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-27-3"> 3</a></span>
@@ -1524,9 +1528,9 @@
 </code></pre></div></td></tr></table></div>
 <p>注释：</p>
 <ul>
-  <li>Spring 使用 [commons-logging.jar] 库记录了大量事件。这些日志有助于我们更好地理解 Spring 的工作原理。
+  <li>Spring 通过 [commons-logging.jar] 库记录了一系列事件。这些日志有助于我们更好地理解 Spring 的运行机制。
   </li>
-  <li>已加载并处理了 [config.xml] 文件
+  <li>文件 [config.xml] 已被加载并用于
   </li>
   <li>操作*
   </li>
@@ -1534,34 +1538,34 @@
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>Personne personne1 = (Personne) bf.getBean(&quot;personne1&quot;);
 </code></pre></div>
-<p>强制创建了 [person1] Bean。我们可以查看 Spring 对此的日志。由于我们在 [person1] Bean 的定义中写入了 [init-method=&quot;init&quot;]，因此创建的 [Person] 对象的 [init] 方法被执行。相应的消息被显示出来。</p>
+<p>操作强制创建了 Bean [personne1]。我们可以看到 Spring 对此的日志记录。 由于在 [personne1] Bean 的定义中写成了 [init-method=&quot;init&quot;]，因此执行了所创建的 [Personne] 对象的 [init] 方法。相应的消息已显示。</p>
 <ul>
-  <li>该操作
+  <li>操作
   </li>
 </ul>
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;personne1=&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">personne1</span><span class="p">.</span><span class="na">toString</span><span class="p">());</span>
 </code></pre></div>
-<p>显示了所创建的 [Person] 对象的值。</p>
+<p>操作显示了所创建的对象 [Personne] 的值。</p>
 <ul>
-  <li>对于 [person2] 键的 Bean 也会出现同样的现象。
+  <li>对于键 Bean [personne2]，同样的情况再次发生。
   </li>
-  <li>最后一项操作
+  <li>最后一个操作
   </li>
 </ul>
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="w">    </span><span class="n">personne2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">Personne</span><span class="p">)</span><span class="w"> </span><span class="n">bf</span><span class="p">.</span><span class="na">getBean</span><span class="p">(</span><span class="s">&quot;personne2&quot;</span><span class="p">);</span>
 <a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;personne2=&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">personne2</span><span class="p">.</span><span class="na">toString</span><span class="p">());</span>
 </code></pre></div>
-<p>并未导致创建一个新的 [Person] 类型对象。如果确实如此，[init] 方法本应被调用，但实际并未发生。 这就是<strong>单例模式的</strong>原理。默认情况下，Spring 仅在其配置文件中创建 Bean 的单个实例。它是一个对象引用服务。如果被请求提供尚未创建的对象的引用，它会创建该对象并返回引用；如果对象已存在，Spring 则直接返回该对象的引用。</p>
+<p>并未导致创建新的 [Personne] 类型对象。如果确实如此，本应显示 [init] 方法，但实际并未发生。这就是<strong>单例模式</strong>的原理。 Spring默认情况下仅会创建配置文件中Bean的唯一实例。它是一个对象引用服务。如果请求一个尚未创建的对象的引用，它会创建该对象并返回一个引用；如果对象已存在，Spring则直接返回该对象的引用。</p>
 <ul>
-  <li>请注意，尽管我们在 Bean 定义中写了 [destroy-method=close]，但 [Person] 对象的 [close] 方法却毫无踪影。该方法可能仅在垃圾回收器回收该对象占用的内存时才会被执行。而到那时，应用程序已经结束，向屏幕写入内容已无实际意义。有待验证。
+  <li>可以注意到，对象 [Personne] 的方法 [close] 完全不见踪影，尽管我们在 [destroy-method=close] 的 Bean 定义中写过它。 可能是该方法仅在垃圾回收器回收该对象占用的内存时才会被执行。此时应用程序已结束运行，因此向屏幕输出内容已无实际意义。需进一步验证。
   </li>
 </ul>
 
-<p>既然我们已经掌握了 Spring 配置的基础知识，接下来的讲解就可以稍微加快一些了。</p>
+<p>既然已经掌握了 Spring 配置的基础知识，接下来的讲解将会更加简洁明了。</p>
 <h3 id="232-2">2.3.2. <span style="color: #4f81bd">示例 2</span></h3>
-<p>请看以下新的 [Car] 类：</p>
+<p>考虑以下新的类 [Voiture]：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-31-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-31-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-31-3"> 3</a></span>
@@ -1627,7 +1631,7 @@
 <a id="__codelineno-31-5" name="__codelineno-31-5"></a><span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">type</span><span class="p">;</span>
 <a id="__codelineno-31-6" name="__codelineno-31-6"></a><span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="n">Personne</span><span class="w"> </span><span class="n">propriétaire</span><span class="p">;</span>
 <a id="__codelineno-31-7" name="__codelineno-31-7"></a>
-<a id="__codelineno-31-8" name="__codelineno-31-8"></a><span class="w">   </span><span class="c1">// manufacturers</span>
+<a id="__codelineno-31-8" name="__codelineno-31-8"></a><span class="w">   </span><span class="c1">// 构造函数</span>
 <a id="__codelineno-31-9" name="__codelineno-31-9"></a>
 <a id="__codelineno-31-10" name="__codelineno-31-10"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="nf">Voiture</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-31-11" name="__codelineno-31-11"></a><span class="w">  </span><span class="p">}</span>
@@ -1644,7 +1648,7 @@
 <a id="__codelineno-31-22" name="__codelineno-31-22"></a><span class="w">        </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;] propriétaire=[&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">propriétaire</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;]&quot;</span><span class="p">;</span>
 <a id="__codelineno-31-23" name="__codelineno-31-23"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-31-24" name="__codelineno-31-24"></a>
-<a id="__codelineno-31-25" name="__codelineno-31-25"></a><span class="w">     </span><span class="c1">// getters-setters</span>
+<a id="__codelineno-31-25" name="__codelineno-31-25"></a><span class="w">     </span><span class="c1">// getter-setter</span>
 <a id="__codelineno-31-26" name="__codelineno-31-26"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">getMarque</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-31-27" name="__codelineno-31-27"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">marque</span><span class="p">;</span>
 <a id="__codelineno-31-28" name="__codelineno-31-28"></a><span class="w">  </span><span class="p">}</span>
@@ -1669,7 +1673,7 @@
 <a id="__codelineno-31-47" name="__codelineno-31-47"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">type</span><span class="p">;</span>
 <a id="__codelineno-31-48" name="__codelineno-31-48"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-31-49" name="__codelineno-31-49"></a>
-<a id="__codelineno-31-50" name="__codelineno-31-50"></a><span class="w">   </span><span class="c1">// init-close</span>
+<a id="__codelineno-31-50" name="__codelineno-31-50"></a><span class="w">   </span><span class="c1">// 初始化-关闭</span>
 <a id="__codelineno-31-51" name="__codelineno-31-51"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">init</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-31-52" name="__codelineno-31-52"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;init voiture [&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">toString</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;]&quot;</span><span class="p">);</span>
 <a id="__codelineno-31-53" name="__codelineno-31-53"></a><span class="w">  </span><span class="p">}</span>
@@ -1682,15 +1686,15 @@
 </code></pre></div></td></tr></table></div>
 <p>该类包含：</p>
 <ul>
-  <li>三个私有字段：<b>type</b>、<b>make </b>和 <b>owner</b>。这些字段可以通过公共的 <b>get </b>和 <b>set</b> 方法进行初始化和读取，也可以通过 <b>Car(String, String, Person)</b> 构造函数进行初始化。该类还提供了一个无参构造函数，以符合 JavaBean 标准。
+  <li>三个私有字段：<b>type</b>、<b>marque </b>和 <b>propriétaire</b>。这些字段可以通过 bean 的 <b>get </b>和 <b>set</b> 公共方法进行初始化和读取。它们也可以通过构造函数 <b>Voiture(String, String, Personne)</b> 进行初始化。该类还拥有一个无参构造函数，以符合 JavaBean 规范。
   </li>
-  <li>一个 <b>toString</b> 方法，用于将 [Car] 对象的值转换为字符串
+  <li>一个 <b>toString</b> 方法，用于以字符串形式获取 [Voiture] 对象的值
   </li>
-  <li>一个 <b>init</b> 方法，该方法将在对象创建后立即由 Spring 调用；一个 <b>close</b> 方法，该方法将在对象销毁时被调用
+  <li>一个 <b>init</b> 方法，将在对象创建后立即由 Spring 调用；一个 <b>close</b> 方法，将在对象销毁时调用
   </li>
 </ul>
 
-<p>要创建 [Car] 类型的对象，我们将使用以下 Spring [<strong>config.xml</strong>] 文件：</p>
+<p>要创建 [Voiture] 类型的对象，我们将使用以下 Spring 文件 [config.xml]：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-32-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-32-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-32-3"> 3</a></span>
@@ -1761,7 +1765,7 @@
 <a id="__codelineno-32-34" name="__codelineno-32-34"></a><span class="w">    </span><span class="nt">&lt;/bean&gt;</span>
 <a id="__codelineno-32-35" name="__codelineno-32-35"></a><span class="nt">&lt;/beans&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p>该文件在之前的定义中添加了一个键为“car1”、类型为[Car]的Bean。要初始化该Bean，我们可以这样编写：</p>
+<p>该文件在之前的定义基础上，新增了一个键为“voiture1”、类型为[Voiture]的Bean。要初始化该Bean，我们可以这样编写：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-33-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-33-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-33-3"> 3</a></span>
@@ -1786,20 +1790,20 @@
 <a id="__codelineno-33-11" name="__codelineno-33-11"></a>        &lt;/property&gt;
 <a id="__codelineno-33-12" name="__codelineno-33-12"></a>    &lt;/bean&gt;
 </code></pre></div></td></tr></table></div>
-<p>与之前介绍的方法不同，这里我们选择使用该类的 <strong>Car(String, String, Person)</strong> 构造函数。此外，[car1] Bean 还定义了在对象初始化时调用的方法 [init-method] 以及在对象销毁时调用的方法 [destroy-method]。</p>
-<p>在测试中，我们将使用之前介绍过的 JUnit 测试类，并向其中添加以下 [test2] 方法：</p>
+<p>与其采用前面介绍的方法，我们在此选择使用该类的构造函数 <strong>Voiture(String, String, Personne)</strong>。 此外，Bean [voiture1] 定义了在初始化 [init-method] 对象时需调用的方法，以及在销毁 [destroy-method] 对象时需调用的方法。</p>
+<p>在测试中，我们将使用之前介绍过的测试类 JUnit，并为其添加以下方法 [test2]：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-34-1">1</a></span>
 <span class="normal"><a href="#__codelineno-34-2">2</a></span>
 <span class="normal"><a href="#__codelineno-34-3">3</a></span>
 <span class="normal"><a href="#__codelineno-34-4">4</a></span>
 <span class="normal"><a href="#__codelineno-34-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">test2</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-34-2" name="__codelineno-34-2"></a><span class="w">     </span><span class="c1">// recovery of bean [voiture1]</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2"></a><span class="w">     </span><span class="c1">// bean 检索[voiture1]</span>
 <a id="__codelineno-34-3" name="__codelineno-34-3"></a><span class="w">    </span><span class="n">Voiture</span><span class="w"> </span><span class="n">Voiture1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">Voiture</span><span class="p">)</span><span class="w"> </span><span class="n">bf</span><span class="p">.</span><span class="na">getBean</span><span class="p">(</span><span class="s">&quot;voiture1&quot;</span><span class="p">);</span>
 <a id="__codelineno-34-4" name="__codelineno-34-4"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Voiture1=&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">Voiture1</span><span class="p">.</span><span class="na">toString</span><span class="p">());</span>
 <a id="__codelineno-34-5" name="__codelineno-34-5"></a><span class="w">  </span><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p>[test2] 方法检索 [car1] Bean 并将其显示出来。</p>
-<p>Eclipse 项目的结构与前一个测试保持一致。执行 JUnit 测试中的 [test2] 方法将得到以下结果：</p>
+<p>方法 [test2] 获取 Bean [voiture1] 并将其显示出来。</p>
+<p>Eclipse 项目的结构与前一个测试中保持一致。执行测试 JUnit 中的方法 [test2] 会得到以下结果：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-35-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-35-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-35-3"> 3</a></span>
@@ -1824,23 +1828,24 @@
 </code></pre></div></td></tr></table></div>
 <p>注释：</p>
 <ol>
-  <li>[test2] 方法请求 [car1] Bean 的引用
+  <li>方法 [test2] 请求对 Bean [voiture1] 的引用
   </li>
-  <li>第 4 行：Spring 开始创建 [car1] Bean，因为该 Bean 尚未被创建（单例）
+  <li>第 4 行：Spring 开始创建 Bean [voiture1]，因为该 Bean 尚未创建（单例）
   </li>
-  <li>第 6 行：由于 [car1] Bean 引用了 [person2] Bean，因此后者也被构建
+  <li>第 6 行：由于 Bean [voiture1] 引用了 Bean [personne2]，因此后者也被构建
   </li>
-  <li>第 7 行：bean [person2] 已创建。随后执行其 [init] 方法。
+  <li>第 7 行：bean [personne2] 已创建。随后执行其方法 [init]。
   </li>
-  <li>第 9 行：Spring 表示将使用构造函数来创建 [car1] Bean
+  <li>第 9 行：Spring 表示将使用构造函数来创建 Bean [voiture1]
   </li>
-  <li>第 10 行：bean [car1] 已创建。随后执行其 [init] 方法。
+  <li>第 10 行：已创建 Bean [voiture1]。随后执行其方法 [init]。
   </li>
-  <li>第 11 行：[test2] 方法显示 [car1] Bean 的值
+  <li>第 11 行：方法 [test2] 显示 Bean [voiture1] 的值
   </li>
 </ol>
+
 <h3 id="233-3">2.3.3. <span style="color: #4f81bd">示例 3</span></h3>
-<p>我们引入以下新类 [PersonGroup]：</p>
+<p>我们引入以下新的 [GroupePersonnes] 类：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-36-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-36-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-36-3"> 3</a></span>
@@ -1891,7 +1896,7 @@
 <a id="__codelineno-36-6" name="__codelineno-36-6"></a><span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="n">Personne</span><span class="o">[]</span><span class="w"> </span><span class="n">membres</span><span class="p">;</span>
 <a id="__codelineno-36-7" name="__codelineno-36-7"></a><span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="n">Map</span><span class="w"> </span><span class="n">groupesDeTravail</span><span class="p">;</span>
 <a id="__codelineno-36-8" name="__codelineno-36-8"></a>
-<a id="__codelineno-36-9" name="__codelineno-36-9"></a><span class="w">   </span><span class="c1">// getters - setters</span>
+<a id="__codelineno-36-9" name="__codelineno-36-9"></a><span class="w">   </span><span class="c1">// getter - setter</span>
 <a id="__codelineno-36-10" name="__codelineno-36-10"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="n">Personne</span><span class="o">[]</span><span class="w"> </span><span class="nf">getMembres</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-36-11" name="__codelineno-36-11"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">membres</span><span class="p">;</span>
 <a id="__codelineno-36-12" name="__codelineno-36-12"></a><span class="w">  </span><span class="p">}</span>
@@ -1908,7 +1913,7 @@
 <a id="__codelineno-36-23" name="__codelineno-36-23"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">groupesDeTravail</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">groupesDeTravail</span><span class="p">;</span>
 <a id="__codelineno-36-24" name="__codelineno-36-24"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-36-25" name="__codelineno-36-25"></a>
-<a id="__codelineno-36-26" name="__codelineno-36-26"></a><span class="w">   </span><span class="c1">// display</span>
+<a id="__codelineno-36-26" name="__codelineno-36-26"></a><span class="w">   </span><span class="c1">// 显示</span>
 <a id="__codelineno-36-27" name="__codelineno-36-27"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">toString</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-36-28" name="__codelineno-36-28"></a><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">liste</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;membres : &quot;</span><span class="p">;</span>
 <a id="__codelineno-36-29" name="__codelineno-36-29"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">membres</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -1917,7 +1922,7 @@
 <a id="__codelineno-36-32" name="__codelineno-36-32"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">liste</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;, groupes de travail = &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">groupesDeTravail</span><span class="p">.</span><span class="na">toString</span><span class="p">();</span>
 <a id="__codelineno-36-33" name="__codelineno-36-33"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-36-34" name="__codelineno-36-34"></a>
-<a id="__codelineno-36-35" name="__codelineno-36-35"></a><span class="w">   </span><span class="c1">// init-close</span>
+<a id="__codelineno-36-35" name="__codelineno-36-35"></a><span class="w">   </span><span class="c1">// 初始化-关闭</span>
 <a id="__codelineno-36-36" name="__codelineno-36-36"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">init</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-36-37" name="__codelineno-36-37"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;init GroupePersonnes [&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">toString</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;]&quot;</span><span class="p">);</span>
 <a id="__codelineno-36-38" name="__codelineno-36-38"></a><span class="w">  </span><span class="p">}</span>
@@ -1927,11 +1932,11 @@
 <a id="__codelineno-36-42" name="__codelineno-36-42"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-36-43" name="__codelineno-36-43"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p>它的两个私有成员是：</p>
-<p><strong>members</strong>：该组成员的数组</p>
-<p><strong>workGroups</strong>：一个字典，用于将人员映射到工作组</p>
-<p>请注意，[PeopleGroup] 类并未定义无参构造函数以符合 JavaBean 标准。回顾一下，如果没有显式定义构造函数，则会存在一个“默认”构造函数，即不执行任何操作的无参构造函数。</p>
-<p>此处的目的是演示 Spring 如何支持初始化复杂对象，例如包含数组或字典字段的对象。我们在之前的 Spring [config.xml] 文件中添加了一个新的 Bean：</p>
+<p>其两个私有成员为：</p>
+<p><strong>成员</strong>：一个包含该组成员的数组</p>
+<p><strong>groupesDeTravail</strong>：一个将人员分配到工作组的字典</p>
+<p>需要注意的是，类 [GroupePersonnes] 并未定义无参构造器，以遵循 JavaBean 规范。需要提醒的是，如果完全没有构造器，则会存在一个“默认”构造器，即无参构造器，它不执行任何操作。</p>
+<p>本文旨在展示 Spring 如何初始化复杂对象，例如包含数组或字典类型字段的对象。我们在前面的 Spring 文件 [config.xml] 中添加一个新的 Bean：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-37-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-37-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-37-3"> 3</a></span>
@@ -1971,25 +1976,25 @@
 <a id="__codelineno-37-19" name="__codelineno-37-19"></a>    &lt;/bean&gt;
 </code></pre></div></td></tr></table></div>
 <ol>
-  <li>&lt;<b>list</b>&gt; 标签允许您为数组类型的字段或实现 <b>List</b> 接口的字段初始化不同的值。
+  <li>&lt;<b>list</b>&gt; 标签可用于为数组类型或实现 <b>List</b> 接口的字段初始化不同值。
   </li>
-  <li>&lt;<b>map</b>&gt; 标签允许您对实现 <b>Map</b> 接口的字段执行相同操作
+  <li>&lt;<b>map</b>&gt; 标签可用于对实现 <b>Map</b> 接口的字段执行相同操作
   </li>
 </ol>
 
-<p>在测试中，我们将使用之前介绍过的 JUnit 测试类，并向其中添加以下 [test3] 方法：</p>
+<p>在测试中，我们将使用之前介绍过的测试类 JUnit，并为其添加以下方法 [test3]：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-38-1">1</a></span>
 <span class="normal"><a href="#__codelineno-38-2">2</a></span>
 <span class="normal"><a href="#__codelineno-38-3">3</a></span>
 <span class="normal"><a href="#__codelineno-38-4">4</a></span>
 <span class="normal"><a href="#__codelineno-38-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">test3</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-38-2" name="__codelineno-38-2"></a><span class="w">    </span><span class="c1">// bean retrieval [group1]]</span>
+<a id="__codelineno-38-2" name="__codelineno-38-2"></a><span class="w">    </span><span class="c1">// 获取 Bean [groupe1]</span>
 <a id="__codelineno-38-3" name="__codelineno-38-3"></a><span class="w">    </span><span class="n">GroupePersonnes</span><span class="w"> </span><span class="n">groupe1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">GroupePersonnes</span><span class="p">)</span><span class="w"> </span><span class="n">bf</span><span class="p">.</span><span class="na">getBean</span><span class="p">(</span><span class="s">&quot;groupe1&quot;</span><span class="p">);</span>
 <a id="__codelineno-38-4" name="__codelineno-38-4"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;groupe1=&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">groupe1</span><span class="p">.</span><span class="na">toString</span><span class="p">());</span>
 <a id="__codelineno-38-5" name="__codelineno-38-5"></a><span class="w">  </span><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p>[test3] 方法获取 [groupe1] Bean 并将其显示出来。</p>
-<p>Eclipse 项目的结构与前一个测试保持一致。执行 JUnit 测试中的 [test3] 方法将得到以下结果：</p>
+<p>方法 [test3] 获取 Bean [groupe1] 并将其显示出来。</p>
+<p>Eclipse 项目的结构与前一个测试中保持一致。执行测试 JUnit 中的方法 [test3] 会得到以下结果：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-39-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-39-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-39-3"> 3</a></span>
@@ -2016,36 +2021,36 @@
 </code></pre></div></td></tr></table></div>
 <p>注释：</p>
 <ul>
-  <li>[test3] 方法请求 [group1] Bean 的引用
+  <li>方法 [test3] 请求 bean [groupe1] 的引用
   </li>
-  <li>第 4 行：Spring 开始创建此 Bean
+  <li>第 4 行：Spring 开始创建该 Bean
   </li>
-  <li>由于 [group1] Bean 引用了 [person1] 和 [person2] Bean，因此这两个 Bean 被创建（第 6 行和第 9 行），并执行了它们的 init 方法（第 7 行和第 10 行）
+  <li>由于 Bean [groupe1] 引用了 Bean [personne1] 和 [personne2]，因此这两个 Bean 被创建（第 6 行和第 9 行），并执行了它们的 init 方法（第 7 行和第 10 行）
   </li>
-  <li>第 11 行：[group1] Bean 已创建。现在执行其 [init] 方法。
+  <li>第 11 行：bean [groupe1] 已创建。现在执行其方法 [init]。
   </li>
-  <li>第 12 行：显示由 [test3] 方法请求的内容。
+  <li>第 12 行：由方法 [test3] 请求显示。
   </li>
 </ul>
 
-<h2 id="24-spring-web">2.4. <span style="color: #4f81bd">Spring 用于配置三层 Web 应用程序</span></h2>
-<h3 id="241">2.4.1. <span style="color: #4f81bd">通用应用程序架构</span></h3>
+<h2 id="24-spring-web">2.4. <span style="color: #4f81bd">使用 Spring 配置三层 Web 应用程序</span></h2>
+<h3 id="241">2.4.1. <span style="color: #4f81bd">应用程序的总体架构</span></h3>
 <p>我们希望构建一个具有以下结构的三层应用程序：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006400000010355E55B59.png" width="680" height="110" style="display:inline-block; margin:4px;width:17.997cm;height:2.912cm;" class="odt-zoomable" data-zoom-src="images/10000000000006400000010355E55B59.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000006400000010355E55B59.png" width="680" height="110" style="display:inline-block; margin:4px;width:17.997cm;height:2.914cm;" class="odt-zoomable" data-zoom-src="images/10000000000006400000010355E55B59.png" /></td></tr></table>
 
 <ul>
-  <li>通过使用 Java 接口，使这三层相互独立
+  <li>通过使用 Java 接口，使三层相互独立
   </li>
-  <li>这三层的集成将由Spring负责
+  <li>三层的集成将由 Spring 实现
   </li>
-  <li>我们将为这三层分别创建独立的包，分别命名为 <b>Control</b>、<b>Domain </b>和 <b>Dao</b>。此外，还将有一个包用于存放测试应用程序。
+  <li>将为三个层分别创建独立的包，分别<b>命名为Control</b>、<b>Domain和Dao</b>。另外将有一个包用于存放测试应用程序。
   </li>
 </ul>
 
-<p>Eclipse 中的应用程序结构如下所示：</p>
+<p>在Eclipse中的应用程序结构可能如下所示：</p>
 <p><img src="images/10000000000000E8000001B51462EB46.png" width="232" height="437" style="width:6.137cm;height:11.561cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000E8000001B51462EB46.png" /></p>
-<h3 id="242-dao">2.4.2. <span style="color: #4f81bd">DAO数据访问层</span></h3>
-<p>DAO 层将实现以下接口：</p>
+<h3 id="242-dao">2.4.2. <span style="color: #4f81bd">数据访问层 DAO</span></h3>
+<p>DAO层将实现以下接口：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="kn">package</span><span class="w"> </span><span class="nn">istia.st.demo.dao</span><span class="p">;</span>
 <a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>
 <a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a><span class="kd">public</span><span class="w"> </span><span class="kd">interface</span> <span class="nc">IDao1</span><span class="w"> </span><span class="p">{</span>
@@ -2053,11 +2058,12 @@
 <a id="__codelineno-40-5" name="__codelineno-40-5" href="#__codelineno-40-5"></a><span class="p">}</span>
 </code></pre></div>
 <ul>
-  <li>编写两个类 <b>Dao1Impl1 </b>和 <b>Dao1Impl2</b>，使其实现 <b>IDao1</b> 接口。<b>Dao1Impl1</b> 的 <b>doSomethingInDaoLayer</b> 方法将返回 a+b，而 <b>Dao1Impl2</b> 的 <b>doSomethingInDaoLayer</b> 方法将返回 a-b。
+  <li>编写两个类 <b>Dao1Impl1 </b>和 <b>Dao1Impl2</b>，它们实现接口 <b>IDao1</b>。 方法 <b>Dao1Impl1</b>.<b>doSomethingInDaoLayer </b>的返回值为 a+b，而方法 <b>Dao1Impl2</b>.<b>doSomethingInDaoLayer </b>的返回值为 a-b。
   </li>
-  <li>编写一个 JUnit 测试类来测试前两个类
+  <li>编写一个测试类 JUnit 来测试前两个类
   </li>
 </ul>
+
 <h3 id="243">2.4.3. <span style="color: #4f81bd">业务层</span></h3>
 <p>业务层将实现以下接口：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="kn">package</span><span class="w"> </span><span class="nn">istia.st.demo.domain</span><span class="p">;</span>
@@ -2067,9 +2073,9 @@
 <a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a><span class="p">}</span>
 </code></pre></div>
 <ul>
-  <li>编写两个类 <b>Domain1Impl1 </b>和 <b>Domain1Impl2</b>，它们实现 <b>IDomain1</b> 接口。这两个类将有一个构造函数，该构造函数接受一个类型为 <b>IDao1 的</b>参数。<b>Domain1Impl1.doSomethingInDomainLayer</b> 方法将 a 和 b 各加 1，然后将这两个参数传递给接收到的 <b>IDao1</b> 对象的 <b>doSomethingInDaoLayer</b> 方法。 另一方面，<b>Domain1Impl2.doSomethingInDomainLayer</b> 方法将在执行相同操作之前，将 a 和 b 各减 1。
+  <li>编写两个类 <b>Domain1Impl1 </b>和 <b>Domain1Impl2</b>，它们实现接口 <b>IDomain1</b>。这些类将有一个构造函数，其参数类型为 <b>IDao1</b>。 方法 <b>Domain1Impl1.doSomethingInDomainLayer</b> 将 a 和 b 各增加 1，然后将这两个参数传递给接收到的 <b>IDao1</b> 类型对象上的方法 <b>doSomethingInDaoLayer</b>。 而方法 <b>Domain1Impl2.doSomethingInDomainLayer</b> 则会先将 a 和 b 减去 1，然后执行相同的操作。
   </li>
-  <li>编写一个 JUnit 测试类来测试前两个类
+  <li>编写一个测试类 JUnit 来测试前两个类
   </li>
 </ul>
 
@@ -2082,26 +2088,28 @@
 <a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a><span class="p">}</span>
 </code></pre></div>
 <ul>
-  <li>编写两个类 <b>Control1Impl1 </b>和 <b>Control1Impl2</b>，它们实现 <b>IControl1</b> 接口。这两个类将有一个构造函数，该构造函数接受一个类型为 <b>IDomain1 的</b>参数。<b>Control1Impl1.doSomethingInControlLayer</b> 方法将 a 和 b 各加 1，然后将这两个参数传递给接收到的 <b>IDomain1</b> 对象的 <b>doSomethingInDomainLayer</b> 方法。 另一方面，<b>Control1Impl2.doSomethingInControlLayer</b> 方法将在执行相同操作之前，将 a 和 b 各减 1。
+  <li>编写两个类 <b>Control1Impl1 </b>和 <b>Control1Impl2</b>，它们实现接口 <b>IControl1</b>。这些类将有一个构造函数，该构造函数接收一个类型为 <b>IDomain1</b> 的参数。 方法 <b>Control1Impl1.doSomethingInControlLayer</b> 将 a 和 b 各增加 1，然后将这两个参数传递给接收到的 <b>IDomain1</b> 类型对象上的方法 <b>doSomethingInDomainLayer</b>。 而方法 <b>Control11Impl2.doSomethingInControlLayer</b> 则会先将 a 和 b 减去 1，然后执行相同的操作。
   </li>
-  <li>编写一个 JUnit 测试类来测试前两个类
+  <li>编写一个测试类 JUnit 来测试前两个类
   </li>
 </ul>
+
 <h3 id="245-spring">2.4.5. <span style="color: #4f81bd">与 Spring 的集成</span></h3>
 <ul>
-  <li>编写一个 Spring 配置文件，用于确定前三个层中的每一层应使用哪些类
+  <li>编写一个 Spring 配置文件，用于决定前三个层级各自应使用哪些类
   </li>
-  <li>编写一个 JUnit 测试类，使用不同的 Spring 配置来突出应用程序的灵活性
+  <li>编写测试类 JUnit，使用不同的 Spring 配置，以突出所编写应用程序的灵活性
   </li>
-  <li>编写一个独立应用程序（main方法），向<b>IControl1</b>接口传递两个参数，并显示该接口返回的结果。
+  <li>编写一个独立应用程序（main方法），向接口<b>IControl1</b>传递两个参数，并显示接口渲染的结果。
   </li>
 </ul>
-<h3 id="246">2.4.6. <span style="color: #4f81bd"><strong><span style="color: #4f81bd">解决方案</span></strong></span></h3>
+
+<h3 id="246">2.4.6. <span style="color: #4f81bd">解决方案</span></h3>
 <h4 id="2461-eclipse">2.4.6.1. <span style="color: #4f81bd">Eclipse 项目</span></h4>
-<p><img src="images/10000000000000D8000001AD27411C6F.png" width="216" height="429" style="width:5.713cm;height:11.347cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000D8000001AD27411C6F.png" /></p>
-<p>[lib] 文件夹中的存档已添加到项目的 [ClassPath] 中。</p>
+<p><img src="images/10000000000000D8000001AD27411C6F.png" width="216" height="429" style="width:5.713cm;height:11.349cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000D8000001AD27411C6F.png" /></p>
+<p>[lib] 文件夹的存档已添加到项目的 [ClassPath] 中。</p>
 <h4 id="2462-istiastdemodao">2.4.6.2. <span style="color: #4f81bd">[istia.st.demo.dao] 包</span></h4>
-<p>接口：</p>
+<p>界面：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-43-1">1</a></span>
 <span class="normal"><a href="#__codelineno-43-2">2</a></span>
 <span class="normal"><a href="#__codelineno-43-3">3</a></span>
@@ -2142,7 +2150,7 @@
 <a id="__codelineno-44-6" name="__codelineno-44-6"></a><span class="cm"> */</span>
 <a id="__codelineno-44-7" name="__codelineno-44-7"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Dao1Impl1</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">IDao1</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-44-8" name="__codelineno-44-8"></a>
-<a id="__codelineno-44-9" name="__codelineno-44-9"></a><span class="w">     </span><span class="c1">// we do something in the [dao] layer</span>
+<a id="__codelineno-44-9" name="__codelineno-44-9"></a><span class="w">     </span><span class="c1">// 在 [dao] 层中执行某些操作</span>
 <a id="__codelineno-44-10" name="__codelineno-44-10"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">doSometingInDaoLayer</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-44-11" name="__codelineno-44-11"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">;</span>
 <a id="__codelineno-44-12" name="__codelineno-44-12"></a><span class="w">  </span><span class="p">}</span>
@@ -2170,13 +2178,13 @@
 <a id="__codelineno-45-6" name="__codelineno-45-6"></a><span class="cm"> */</span>
 <a id="__codelineno-45-7" name="__codelineno-45-7"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Dao1Impl2</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">IDao1</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-45-8" name="__codelineno-45-8"></a>
-<a id="__codelineno-45-9" name="__codelineno-45-9"></a><span class="w">     </span><span class="c1">// we do something in the [dao] layer</span>
+<a id="__codelineno-45-9" name="__codelineno-45-9"></a><span class="w">     </span><span class="c1">// 在 [dao] 层中执行某些操作</span>
 <a id="__codelineno-45-10" name="__codelineno-45-10"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">doSometingInDaoLayer</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-45-11" name="__codelineno-45-11"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">;</span>
 <a id="__codelineno-45-12" name="__codelineno-45-12"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-45-13" name="__codelineno-45-13"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<h4 id="2463-istiastdemodomain">2.4.6.3. <span style="color: #4f81bd">[istia.st.demo.domain] 包</span></h4>
+<h4 id="2463-istiastdemodomain">2.4.6.3. <span style="color: #4f81bd">[istia.st.demo.domain] 软件包</span></h4>
 <p>接口：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-46-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-46-2"> 2</a></span>
@@ -2196,7 +2204,7 @@
 <a id="__codelineno-46-6" name="__codelineno-46-6"></a><span class="cm"> */</span>
 <a id="__codelineno-46-7" name="__codelineno-46-7"></a><span class="kd">public</span><span class="w"> </span><span class="kd">interface</span> <span class="nc">IDomain1</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-46-8" name="__codelineno-46-8"></a>
-<a id="__codelineno-46-9" name="__codelineno-46-9"></a><span class="w">     </span><span class="c1">// we do something in the [domain] layer</span>
+<a id="__codelineno-46-9" name="__codelineno-46-9"></a><span class="w">     </span><span class="c1">// 在 [domain] 层中执行某些操作</span>
 <a id="__codelineno-46-10" name="__codelineno-46-10"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">doSomethingInDomainLayer</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
 <a id="__codelineno-46-11" name="__codelineno-46-11"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
@@ -2239,19 +2247,19 @@
 <a id="__codelineno-47-8" name="__codelineno-47-8"></a><span class="cm"> */</span>
 <a id="__codelineno-47-9" name="__codelineno-47-9"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Domain1Impl1</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">IDomain1</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-47-10" name="__codelineno-47-10"></a>
-<a id="__codelineno-47-11" name="__codelineno-47-11"></a><span class="w">     </span><span class="c1">// the [dao] layer access service</span>
+<a id="__codelineno-47-11" name="__codelineno-47-11"></a><span class="w">     </span><span class="c1">// 访问 [dao] 层的服务</span>
 <a id="__codelineno-47-12" name="__codelineno-47-12"></a><span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="n">IDao1</span><span class="w"> </span><span class="n">dao1</span><span class="p">;</span>
 <a id="__codelineno-47-13" name="__codelineno-47-13"></a>
 <a id="__codelineno-47-14" name="__codelineno-47-14"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="nf">Domain1Impl1</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-47-15" name="__codelineno-47-15"></a><span class="w">     </span><span class="c1">// constructor with no arguments</span>
+<a id="__codelineno-47-15" name="__codelineno-47-15"></a><span class="w">     </span><span class="c1">// 无参数构造函数</span>
 <a id="__codelineno-47-16" name="__codelineno-47-16"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-47-17" name="__codelineno-47-17"></a>
-<a id="__codelineno-47-18" name="__codelineno-47-18"></a><span class="w">     </span><span class="c1">// memorizes the [dao] layer access service</span>
+<a id="__codelineno-47-18" name="__codelineno-47-18"></a><span class="w">     </span><span class="c1">// 存储层访问服务 [dao]</span>
 <a id="__codelineno-47-19" name="__codelineno-47-19"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="nf">Domain1Impl1</span><span class="p">(</span><span class="n">IDao1</span><span class="w"> </span><span class="n">dao1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-47-20" name="__codelineno-47-20"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">dao1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dao1</span><span class="p">;</span>
 <a id="__codelineno-47-21" name="__codelineno-47-21"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-47-22" name="__codelineno-47-22"></a>
-<a id="__codelineno-47-23" name="__codelineno-47-23"></a><span class="w">     </span><span class="c1">// we do something in the [domain] layer</span>
+<a id="__codelineno-47-23" name="__codelineno-47-23"></a><span class="w">     </span><span class="c1">// 在 [domain] 层中执行某些操作</span>
 <a id="__codelineno-47-24" name="__codelineno-47-24"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">doSomethingInDomainLayer</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-47-25" name="__codelineno-47-25"></a><span class="w">    </span><span class="n">a</span><span class="o">++</span><span class="p">;</span>
 <a id="__codelineno-47-26" name="__codelineno-47-26"></a><span class="w">    </span><span class="n">b</span><span class="o">++</span><span class="p">;</span>
@@ -2298,19 +2306,19 @@
 <a id="__codelineno-48-8" name="__codelineno-48-8"></a><span class="cm"> */</span>
 <a id="__codelineno-48-9" name="__codelineno-48-9"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Domain1Impl2</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">IDomain1</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-48-10" name="__codelineno-48-10"></a>
-<a id="__codelineno-48-11" name="__codelineno-48-11"></a><span class="w">     </span><span class="c1">// the [dao] layer access service</span>
+<a id="__codelineno-48-11" name="__codelineno-48-11"></a><span class="w">     </span><span class="c1">// [dao] 层访问服务</span>
 <a id="__codelineno-48-12" name="__codelineno-48-12"></a><span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="n">IDao1</span><span class="w"> </span><span class="n">dao1</span><span class="p">;</span>
 <a id="__codelineno-48-13" name="__codelineno-48-13"></a>
 <a id="__codelineno-48-14" name="__codelineno-48-14"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="nf">Domain1Impl2</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-48-15" name="__codelineno-48-15"></a><span class="w">     </span><span class="c1">// constructor with no arguments</span>
+<a id="__codelineno-48-15" name="__codelineno-48-15"></a><span class="w">     </span><span class="c1">// 无参数构造函数</span>
 <a id="__codelineno-48-16" name="__codelineno-48-16"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-48-17" name="__codelineno-48-17"></a>
-<a id="__codelineno-48-18" name="__codelineno-48-18"></a><span class="w">     </span><span class="c1">// memorizes the [dao] layer access service</span>
+<a id="__codelineno-48-18" name="__codelineno-48-18"></a><span class="w">     </span><span class="c1">// 存储层访问服务 [dao]</span>
 <a id="__codelineno-48-19" name="__codelineno-48-19"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="nf">Domain1Impl2</span><span class="p">(</span><span class="n">IDao1</span><span class="w"> </span><span class="n">dao1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-48-20" name="__codelineno-48-20"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">dao1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dao1</span><span class="p">;</span>
 <a id="__codelineno-48-21" name="__codelineno-48-21"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-48-22" name="__codelineno-48-22"></a>
-<a id="__codelineno-48-23" name="__codelineno-48-23"></a><span class="w">     </span><span class="c1">// we do something in the [domain] layer</span>
+<a id="__codelineno-48-23" name="__codelineno-48-23"></a><span class="w">     </span><span class="c1">// 在 [domain] 层中执行某些操作</span>
 <a id="__codelineno-48-24" name="__codelineno-48-24"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">doSomethingInDomainLayer</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-48-25" name="__codelineno-48-25"></a><span class="w">    </span><span class="n">a</span><span class="o">--</span><span class="p">;</span>
 <a id="__codelineno-48-26" name="__codelineno-48-26"></a><span class="w">    </span><span class="n">b</span><span class="o">--</span><span class="p">;</span>
@@ -2318,7 +2326,7 @@
 <a id="__codelineno-48-28" name="__codelineno-48-28"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-48-29" name="__codelineno-48-29"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<h4 id="2464-istiastdemocontrol">2.4.6.4. <span style="color: #4f81bd">包 [istia.st.demo.control]</span></h4>
+<h4 id="2464-istiastdemocontrol">2.4.6.4. <span style="color: #4f81bd">[istia.st.demo.control] 包</span></h4>
 <p>接口</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-49-1">1</a></span>
 <span class="normal"><a href="#__codelineno-49-2">2</a></span>
@@ -2376,19 +2384,19 @@
 <a id="__codelineno-50-7" name="__codelineno-50-7"></a><span class="cm"> *  </span>
 <a id="__codelineno-50-8" name="__codelineno-50-8"></a><span class="cm"> */</span>
 <a id="__codelineno-50-9" name="__codelineno-50-9"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Control1Impl1</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">IControl1</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-50-10" name="__codelineno-50-10"></a><span class="w">   </span><span class="c1">// business class in layer [domain]</span>
+<a id="__codelineno-50-10" name="__codelineno-50-10"></a><span class="w">   </span><span class="c1">// [domain] 层中的业务类</span>
 <a id="__codelineno-50-11" name="__codelineno-50-11"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">IDomain1</span><span class="w"> </span><span class="n">domain1</span><span class="p">;</span>
 <a id="__codelineno-50-12" name="__codelineno-50-12"></a>
 <a id="__codelineno-50-13" name="__codelineno-50-13"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="nf">Control1Impl1</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-50-14" name="__codelineno-50-14"></a><span class="w">     </span><span class="c1">// constructor with no arguments</span>
+<a id="__codelineno-50-14" name="__codelineno-50-14"></a><span class="w">     </span><span class="c1">// 无参构造函数</span>
 <a id="__codelineno-50-15" name="__codelineno-50-15"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-50-16" name="__codelineno-50-16"></a>
-<a id="__codelineno-50-17" name="__codelineno-50-17"></a><span class="w">     </span><span class="c1">// domain] layer access service enhancement</span>
+<a id="__codelineno-50-17" name="__codelineno-50-17"></a><span class="w">     </span><span class="c1">// [domain] 层的访问服务实例化</span>
 <a id="__codelineno-50-18" name="__codelineno-50-18"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="nf">Control1Impl1</span><span class="p">(</span><span class="n">IDomain1</span><span class="w"> </span><span class="n">domain1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-50-19" name="__codelineno-50-19"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">domain1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">domain1</span><span class="p">;</span>
 <a id="__codelineno-50-20" name="__codelineno-50-20"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-50-21" name="__codelineno-50-21"></a>
-<a id="__codelineno-50-22" name="__codelineno-50-22"></a><span class="w">     </span><span class="c1">// we&#39;re doing something</span>
+<a id="__codelineno-50-22" name="__codelineno-50-22"></a><span class="w">     </span><span class="c1">// 执行某些操作</span>
 <a id="__codelineno-50-23" name="__codelineno-50-23"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">doSometingInControlLayer</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-50-24" name="__codelineno-50-24"></a><span class="w">    </span><span class="n">a</span><span class="o">++</span><span class="p">;</span>
 <a id="__codelineno-50-25" name="__codelineno-50-25"></a><span class="w">    </span><span class="n">b</span><span class="o">++</span><span class="p">;</span>
@@ -2437,19 +2445,19 @@
 <a id="__codelineno-51-8" name="__codelineno-51-8"></a><span class="cm"> */</span>
 <a id="__codelineno-51-9" name="__codelineno-51-9"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Control1Impl2</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">IControl1</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-51-10" name="__codelineno-51-10"></a>
-<a id="__codelineno-51-11" name="__codelineno-51-11"></a><span class="w">     </span><span class="c1">// the [domain] layer access class</span>
+<a id="__codelineno-51-11" name="__codelineno-51-11"></a><span class="w">     </span><span class="c1">// [domain] 层访问类</span>
 <a id="__codelineno-51-12" name="__codelineno-51-12"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">IDomain1</span><span class="w"> </span><span class="n">domain1</span><span class="p">;</span>
 <a id="__codelineno-51-13" name="__codelineno-51-13"></a>
 <a id="__codelineno-51-14" name="__codelineno-51-14"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="nf">Control1Impl2</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-51-15" name="__codelineno-51-15"></a><span class="w">     </span><span class="c1">// constructor with no arguments</span>
+<a id="__codelineno-51-15" name="__codelineno-51-15"></a><span class="w">     </span><span class="c1">// 无参构造函数</span>
 <a id="__codelineno-51-16" name="__codelineno-51-16"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-51-17" name="__codelineno-51-17"></a>
-<a id="__codelineno-51-18" name="__codelineno-51-18"></a><span class="w">     </span><span class="c1">// stores the [domain] layer access class</span>
+<a id="__codelineno-51-18" name="__codelineno-51-18"></a><span class="w">     </span><span class="c1">// 存储访问层的类 [domain]</span>
 <a id="__codelineno-51-19" name="__codelineno-51-19"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="nf">Control1Impl2</span><span class="p">(</span><span class="n">IDomain1</span><span class="w"> </span><span class="n">domain1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-51-20" name="__codelineno-51-20"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">domain1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">domain1</span><span class="p">;</span>
 <a id="__codelineno-51-21" name="__codelineno-51-21"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-51-22" name="__codelineno-51-22"></a>
-<a id="__codelineno-51-23" name="__codelineno-51-23"></a><span class="w">     </span><span class="c1">// we&#39;re doing something</span>
+<a id="__codelineno-51-23" name="__codelineno-51-23"></a><span class="w">     </span><span class="c1">// 执行某些操作</span>
 <a id="__codelineno-51-24" name="__codelineno-51-24"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">doSometingInControlLayer</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-51-25" name="__codelineno-51-25"></a><span class="w">    </span><span class="n">a</span><span class="o">--</span><span class="p">;</span>
 <a id="__codelineno-51-26" name="__codelineno-51-26"></a><span class="w">    </span><span class="n">b</span><span class="o">--</span><span class="p">;</span>
@@ -2458,7 +2466,7 @@
 <a id="__codelineno-51-29" name="__codelineno-51-29"></a>
 <a id="__codelineno-51-30" name="__codelineno-51-30"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<h4 id="2465-spring">2.4.6.5. <span style="color: #4f81bd"><strong><em><span style="color: #4f81bd">[Spring] 配置文件</span></em></strong></span></h4>
+<h4 id="2465-spring">2.4.6.5. <span style="color: #4f81bd">配置文件 [Spring]</span></h4>
 <p>第一个 [springMainTest1.xml]：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-52-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-52-2"> 2</a></span>
@@ -2481,16 +2489,16 @@
 <span class="normal"><a href="#__codelineno-52-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-52-1" name="__codelineno-52-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
 <a id="__codelineno-52-2" name="__codelineno-52-2"></a><span class="cp">&lt;!DOCTYPE beans SYSTEM &quot;http://www.springframework.org/dtd/spring-beans.dtd&quot;&gt;</span>
 <a id="__codelineno-52-3" name="__codelineno-52-3"></a><span class="nt">&lt;beans&gt;</span>
-<a id="__codelineno-52-4" name="__codelineno-52-4"></a><span class="w">     </span><span class="cm">&lt;!-- the dao class --&gt;</span>
+<a id="__codelineno-52-4" name="__codelineno-52-4"></a><span class="w">     </span><span class="cm">&lt;!-- DAO类 --&gt;</span>
 <a id="__codelineno-52-5" name="__codelineno-52-5"></a><span class="w">    </span><span class="nt">&lt;bean</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;dao&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;istia.st.demo.dao.Dao1Impl1&quot;</span><span class="nt">&gt;</span>
 <a id="__codelineno-52-6" name="__codelineno-52-6"></a><span class="w">    </span><span class="nt">&lt;/bean&gt;</span>
-<a id="__codelineno-52-7" name="__codelineno-52-7"></a><span class="w">     </span><span class="cm">&lt;!-- the trade class --&gt;</span>
+<a id="__codelineno-52-7" name="__codelineno-52-7"></a><span class="w">     </span><span class="cm">&lt;!-- 业务类 --&gt;</span>
 <a id="__codelineno-52-8" name="__codelineno-52-8"></a><span class="w">    </span><span class="nt">&lt;bean</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;domain&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;istia.st.demo.domain.Domain1Impl1&quot;</span><span class="nt">&gt;</span>
 <a id="__codelineno-52-9" name="__codelineno-52-9"></a><span class="w">        </span><span class="nt">&lt;constructor-arg</span><span class="w"> </span><span class="na">index=</span><span class="s">&quot;0&quot;</span><span class="nt">&gt;</span>
 <a id="__codelineno-52-10" name="__codelineno-52-10"></a><span class="w">            </span><span class="nt">&lt;ref</span><span class="w"> </span><span class="na">bean=</span><span class="s">&quot;dao&quot;</span><span class="nt">/&gt;</span>
 <a id="__codelineno-52-11" name="__codelineno-52-11"></a><span class="w">        </span><span class="nt">&lt;/constructor-arg&gt;</span>
 <a id="__codelineno-52-12" name="__codelineno-52-12"></a><span class="w">    </span><span class="nt">&lt;/bean&gt;</span>
-<a id="__codelineno-52-13" name="__codelineno-52-13"></a><span class="w">     </span><span class="cm">&lt;!-- the control class --&gt;</span>
+<a id="__codelineno-52-13" name="__codelineno-52-13"></a><span class="w">     </span><span class="cm">&lt;!-- 控制类 --&gt;</span>
 <a id="__codelineno-52-14" name="__codelineno-52-14"></a><span class="w">    </span><span class="nt">&lt;bean</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;control&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;istia.st.demo.control.Control1Impl1&quot;</span><span class="nt">&gt;</span>
 <a id="__codelineno-52-15" name="__codelineno-52-15"></a><span class="w">        </span><span class="nt">&lt;constructor-arg</span><span class="w"> </span><span class="na">index=</span><span class="s">&quot;0&quot;</span><span class="nt">&gt;</span>
 <a id="__codelineno-52-16" name="__codelineno-52-16"></a><span class="w">            </span><span class="nt">&lt;ref</span><span class="w"> </span><span class="na">bean=</span><span class="s">&quot;domain&quot;</span><span class="nt">/&gt;</span>
@@ -2520,16 +2528,16 @@
 <span class="normal"><a href="#__codelineno-53-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-53-1" name="__codelineno-53-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
 <a id="__codelineno-53-2" name="__codelineno-53-2"></a><span class="cp">&lt;!DOCTYPE beans SYSTEM &quot;http://www.springframework.org/dtd/spring-beans.dtd&quot;&gt;</span>
 <a id="__codelineno-53-3" name="__codelineno-53-3"></a><span class="nt">&lt;beans&gt;</span>
-<a id="__codelineno-53-4" name="__codelineno-53-4"></a><span class="w">     </span><span class="cm">&lt;!-- the dao class --&gt;</span>
+<a id="__codelineno-53-4" name="__codelineno-53-4"></a><span class="w">     </span><span class="cm">&lt;!-- DAO类 --&gt;</span>
 <a id="__codelineno-53-5" name="__codelineno-53-5"></a><span class="w">    </span><span class="nt">&lt;bean</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;dao&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;istia.st.demo.dao.Dao1Impl2&quot;</span><span class="nt">&gt;</span>
 <a id="__codelineno-53-6" name="__codelineno-53-6"></a><span class="w">    </span><span class="nt">&lt;/bean&gt;</span>
-<a id="__codelineno-53-7" name="__codelineno-53-7"></a><span class="w">     </span><span class="cm">&lt;!-- the trade class --&gt;</span>
+<a id="__codelineno-53-7" name="__codelineno-53-7"></a><span class="w">     </span><span class="cm">&lt;!-- 业务类 --&gt;</span>
 <a id="__codelineno-53-8" name="__codelineno-53-8"></a><span class="w">    </span><span class="nt">&lt;bean</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;domain&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;istia.st.demo.domain.Domain1Impl2&quot;</span><span class="nt">&gt;</span>
 <a id="__codelineno-53-9" name="__codelineno-53-9"></a><span class="w">        </span><span class="nt">&lt;constructor-arg</span><span class="w"> </span><span class="na">index=</span><span class="s">&quot;0&quot;</span><span class="nt">&gt;</span>
 <a id="__codelineno-53-10" name="__codelineno-53-10"></a><span class="w">            </span><span class="nt">&lt;ref</span><span class="w"> </span><span class="na">bean=</span><span class="s">&quot;dao&quot;</span><span class="nt">/&gt;</span>
 <a id="__codelineno-53-11" name="__codelineno-53-11"></a><span class="w">        </span><span class="nt">&lt;/constructor-arg&gt;</span>
 <a id="__codelineno-53-12" name="__codelineno-53-12"></a><span class="w">    </span><span class="nt">&lt;/bean&gt;</span>
-<a id="__codelineno-53-13" name="__codelineno-53-13"></a><span class="w">     </span><span class="cm">&lt;!-- the control class --&gt;</span>
+<a id="__codelineno-53-13" name="__codelineno-53-13"></a><span class="w">     </span><span class="cm">&lt;!-- 控制类 --&gt;</span>
 <a id="__codelineno-53-14" name="__codelineno-53-14"></a><span class="w">    </span><span class="nt">&lt;bean</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;control&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;istia.st.demo.control.Control1Impl2&quot;</span><span class="nt">&gt;</span>
 <a id="__codelineno-53-15" name="__codelineno-53-15"></a><span class="w">        </span><span class="nt">&lt;constructor-arg</span><span class="w"> </span><span class="na">index=</span><span class="s">&quot;0&quot;</span><span class="nt">&gt;</span>
 <a id="__codelineno-53-16" name="__codelineno-53-16"></a><span class="w">            </span><span class="nt">&lt;ref</span><span class="w"> </span><span class="na">bean=</span><span class="s">&quot;domain&quot;</span><span class="nt">/&gt;</span>
@@ -2537,8 +2545,8 @@
 <a id="__codelineno-53-18" name="__codelineno-53-18"></a><span class="w">    </span><span class="nt">&lt;/bean&gt;</span>
 <a id="__codelineno-53-19" name="__codelineno-53-19"></a><span class="nt">&lt;/beans&gt;</span>
 </code></pre></div></td></tr></table></div>
-<h4 id="2466-istiastdemotests">2.4.6.6. <span style="color: #4f81bd"><strong><em><span style="color: #4f81bd">测试包 [istia.st.demo.tests]</span></em></strong></span></h4>
-<p>一个 [main] 测试：</p>
+<h4 id="2466-istiastdemotests">2.4.6.6. <span style="color: #4f81bd">测试包 [istia.st.demo.tests]</span></h4>
+<p>一个 [main] 类型的测试：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-54-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-54-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-54-3"> 3</a></span>
@@ -2574,18 +2582,18 @@
 <a id="__codelineno-54-11" name="__codelineno-54-11"></a><span class="cm"> */</span>
 <a id="__codelineno-54-12" name="__codelineno-54-12"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MainTest1</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-54-13" name="__codelineno-54-13"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">arguments</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-54-14" name="__codelineno-54-14"></a><span class="w">     </span><span class="c1">// we retrieve an implementation of the IControl1 interface</span>
+<a id="__codelineno-54-14" name="__codelineno-54-14"></a><span class="w">     </span><span class="c1">// 获取接口的实现IControl1</span>
 <a id="__codelineno-54-15" name="__codelineno-54-15"></a><span class="w">    </span><span class="n">IControl1</span><span class="w"> </span><span class="n">control</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">IControl1</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">XmlBeanFactory</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">ClassPathResource</span><span class="p">(</span>
 <a id="__codelineno-54-16" name="__codelineno-54-16"></a><span class="w">        </span><span class="s">&quot;springMainTest1.xml&quot;</span><span class="p">))).</span><span class="na">getBean</span><span class="p">(</span><span class="s">&quot;control&quot;</span><span class="p">);</span>
-<a id="__codelineno-54-17" name="__codelineno-54-17"></a><span class="w">     </span><span class="c1">// we use the</span>
+<a id="__codelineno-54-17" name="__codelineno-54-17"></a><span class="w">     </span><span class="c1">// 使用该类</span>
 <a id="__codelineno-54-18" name="__codelineno-54-18"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
 <a id="__codelineno-54-19" name="__codelineno-54-19"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">control</span><span class="p">.</span><span class="na">doSometingInControlLayer</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
-<a id="__codelineno-54-20" name="__codelineno-54-20"></a><span class="w">     </span><span class="c1">// the result is displayed</span>
+<a id="__codelineno-54-20" name="__codelineno-54-20"></a><span class="w">     </span><span class="c1">// 显示结果</span>
 <a id="__codelineno-54-21" name="__codelineno-54-21"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;control(&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;,&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;)=&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">res</span><span class="p">);</span>
 <a id="__codelineno-54-22" name="__codelineno-54-22"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-54-23" name="__codelineno-54-23"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p>Eclipse 控制台显示的结果：</p>
+<p>在 Eclipse 控制台上获得的结果：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-55-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-55-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-55-3"> 3</a></span>
@@ -2612,7 +2620,7 @@
 <a id="__codelineno-55-12" name="__codelineno-55-12"></a><span class="n">INFO</span><span class="p">:</span> <span class="n">Bean</span> <span class="s1">&#39;control&#39;</span> <span class="n">instantiated</span> <span class="n">via</span> <span class="n">constructor</span> <span class="p">[</span><span class="n">public</span> <span class="n">istia</span><span class="o">.</span><span class="n">st</span><span class="o">.</span><span class="n">demo</span><span class="o">.</span><span class="n">control</span><span class="o">.</span><span class="n">Control1Impl1</span><span class="p">(</span><span class="n">istia</span><span class="o">.</span><span class="n">st</span><span class="o">.</span><span class="n">demo</span><span class="o">.</span><span class="n">domain</span><span class="o">.</span><span class="n">IDomain1</span><span class="p">)]</span>
 <a id="__codelineno-55-13" name="__codelineno-55-13"></a><span class="n">control</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span><span class="o">=</span><span class="mi">34</span>
 </code></pre></div></td></tr></table></div>
-<p>使用第二个 [Spring] 配置文件的另一项测试：</p>
+<p>使用第二个配置文件的另一个测试 [Spring]：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-56-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-56-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-56-3"> 3</a></span>
@@ -2646,18 +2654,18 @@
 <a id="__codelineno-56-10" name="__codelineno-56-10"></a><span class="cm"> */</span>
 <a id="__codelineno-56-11" name="__codelineno-56-11"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MainTest2</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-56-12" name="__codelineno-56-12"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">arguments</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-56-13" name="__codelineno-56-13"></a><span class="w">     </span><span class="c1">// we retrieve an implementation of the IControl1 interface</span>
+<a id="__codelineno-56-13" name="__codelineno-56-13"></a><span class="w">     </span><span class="c1">// 获取接口的实现IControl1</span>
 <a id="__codelineno-56-14" name="__codelineno-56-14"></a><span class="w">    </span><span class="n">IControl1</span><span class="w"> </span><span class="n">control</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">IControl1</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">XmlBeanFactory</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">ClassPathResource</span><span class="p">(</span>
 <a id="__codelineno-56-15" name="__codelineno-56-15"></a><span class="w">        </span><span class="s">&quot;springMainTest2.xml&quot;</span><span class="p">))).</span><span class="na">getBean</span><span class="p">(</span><span class="s">&quot;control&quot;</span><span class="p">);</span>
-<a id="__codelineno-56-16" name="__codelineno-56-16"></a><span class="w">     </span><span class="c1">// we use the</span>
+<a id="__codelineno-56-16" name="__codelineno-56-16"></a><span class="w">     </span><span class="c1">// 使用该类</span>
 <a id="__codelineno-56-17" name="__codelineno-56-17"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
 <a id="__codelineno-56-18" name="__codelineno-56-18"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">control</span><span class="p">.</span><span class="na">doSometingInControlLayer</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
-<a id="__codelineno-56-19" name="__codelineno-56-19"></a><span class="w">     </span><span class="c1">// the result is displayed</span>
+<a id="__codelineno-56-19" name="__codelineno-56-19"></a><span class="w">     </span><span class="c1">// 显示结果</span>
 <a id="__codelineno-56-20" name="__codelineno-56-20"></a><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;control(&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;,&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;)=&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">res</span><span class="p">);</span>
 <a id="__codelineno-56-21" name="__codelineno-56-21"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-56-22" name="__codelineno-56-22"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<p>Eclipse 控制台中显示的结果：</p>
+<p>在 Eclipse 控制台中获得的结果：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-57-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-57-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-57-3"> 3</a></span>
@@ -2684,7 +2692,7 @@
 <a id="__codelineno-57-12" name="__codelineno-57-12"></a><span class="n">INFO</span><span class="p">:</span> <span class="n">Bean</span> <span class="s1">&#39;control&#39;</span> <span class="n">instantiated</span> <span class="n">via</span> <span class="n">constructor</span> <span class="p">[</span><span class="n">public</span> <span class="n">istia</span><span class="o">.</span><span class="n">st</span><span class="o">.</span><span class="n">demo</span><span class="o">.</span><span class="n">control</span><span class="o">.</span><span class="n">Control1Impl2</span><span class="p">(</span><span class="n">istia</span><span class="o">.</span><span class="n">st</span><span class="o">.</span><span class="n">demo</span><span class="o">.</span><span class="n">domain</span><span class="o">.</span><span class="n">IDomain1</span><span class="p">)]</span>
 <a id="__codelineno-57-13" name="__codelineno-57-13"></a><span class="n">control</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span><span class="o">=-</span><span class="mi">10</span>
 </code></pre></div></td></tr></table></div>
-<p>最后，一个 JUnit 测试：</p>
+<p>最后，一个JUnit测试：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-58-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-58-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-58-3"> 3</a></span>
@@ -2726,66 +2734,66 @@
 <a id="__codelineno-58-11" name="__codelineno-58-11"></a><span class="cm"> */</span>
 <a id="__codelineno-58-12" name="__codelineno-58-12"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">JunitTest2Control1</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">TestCase</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-58-13" name="__codelineno-58-13"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">testControl1</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-58-14" name="__codelineno-58-14"></a><span class="w">     </span><span class="c1">// we retrieve an implementation of the IControl1 interface</span>
+<a id="__codelineno-58-14" name="__codelineno-58-14"></a><span class="w">     </span><span class="c1">// 获取接口 IControl1 的实现</span>
 <a id="__codelineno-58-15" name="__codelineno-58-15"></a><span class="w">    </span><span class="n">IControl1</span><span class="w"> </span><span class="n">control1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">IControl1</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">XmlBeanFactory</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">ClassPathResource</span><span class="p">(</span>
 <a id="__codelineno-58-16" name="__codelineno-58-16"></a><span class="w">        </span><span class="s">&quot;springMainTest1.xml&quot;</span><span class="p">))).</span><span class="na">getBean</span><span class="p">(</span><span class="s">&quot;control&quot;</span><span class="p">);</span>
-<a id="__codelineno-58-17" name="__codelineno-58-17"></a><span class="w">     </span><span class="c1">// we use the</span>
+<a id="__codelineno-58-17" name="__codelineno-58-17"></a><span class="w">     </span><span class="c1">// 使用该类</span>
 <a id="__codelineno-58-18" name="__codelineno-58-18"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="n">b1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
 <a id="__codelineno-58-19" name="__codelineno-58-19"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">res1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">control1</span><span class="p">.</span><span class="na">doSometingInControlLayer</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span><span class="w"> </span><span class="n">b1</span><span class="p">);</span>
 <a id="__codelineno-58-20" name="__codelineno-58-20"></a><span class="w">    </span><span class="n">assertEquals</span><span class="p">(</span><span class="mi">34</span><span class="p">,</span><span class="w"> </span><span class="n">res1</span><span class="p">);</span>
-<a id="__codelineno-58-21" name="__codelineno-58-21"></a><span class="w">     </span><span class="c1">// we retrieve another implementation of the IControl1 interface</span>
+<a id="__codelineno-58-21" name="__codelineno-58-21"></a><span class="w">     </span><span class="c1">// 获取接口的另一个实现 IControl1</span>
 <a id="__codelineno-58-22" name="__codelineno-58-22"></a><span class="w">    </span><span class="n">IControl1</span><span class="w"> </span><span class="n">control2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">IControl1</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">XmlBeanFactory</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">ClassPathResource</span><span class="p">(</span>
 <a id="__codelineno-58-23" name="__codelineno-58-23"></a><span class="w">        </span><span class="s">&quot;springMainTest2.xml&quot;</span><span class="p">))).</span><span class="na">getBean</span><span class="p">(</span><span class="s">&quot;control&quot;</span><span class="p">);</span>
-<a id="__codelineno-58-24" name="__codelineno-58-24"></a><span class="w">     </span><span class="c1">// we use the</span>
+<a id="__codelineno-58-24" name="__codelineno-58-24"></a><span class="w">     </span><span class="c1">// 使用类</span>
 <a id="__codelineno-58-25" name="__codelineno-58-25"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="n">b2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
 <a id="__codelineno-58-26" name="__codelineno-58-26"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">res2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">control2</span><span class="p">.</span><span class="na">doSometingInControlLayer</span><span class="p">(</span><span class="n">a2</span><span class="p">,</span><span class="w"> </span><span class="n">b2</span><span class="p">);</span>
 <a id="__codelineno-58-27" name="__codelineno-58-27"></a><span class="w">    </span><span class="n">assertEquals</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="n">res2</span><span class="p">);</span>
 <a id="__codelineno-58-28" name="__codelineno-58-28"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-58-29" name="__codelineno-58-29"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="25">2.5. <span style="color: #4f81bd">结论</span></h2>
-<p>Spring 框架在应用程序架构和配置方面都提供了真正的灵活性。我们使用了 IoC 概念，这是 Spring 的两大支柱之一。另一大支柱是 AOP（面向切面编程），本文未涉及该内容。它允许您通过配置向类方法添加“行为”，而无需修改方法的代码。简而言之，AOP 允许您过滤对某些方法的调用：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003F2000000C77329320D.png" width="505" height="100" style="display:inline-block; margin:4px;width:13.361cm;height:2.633cm;" class="odt-zoomable" data-zoom-src="images/10000000000003F2000000C77329320D.png" /></td></tr></table>
+<h2 id="25-conclusion">2.5. <span style="color: #4f81bd">Conclusion</span></h2>
+<p>Spring 框架在应用程序架构和配置方面都提供了真正的灵活性。我们使用了 IoC 概念，这是 Spring 的两大支柱之一。 另一个支柱是 AOP（面向切面编程），我们尚未介绍。它允许通过配置为类的方法添加“行为”，而无需修改该方法的代码。简而言之，AOP 可以过滤对某些方法的调用：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000003F2000000C77329320D.png" width="505" height="100" style="display:inline-block; margin:4px;width:13.361cm;height:2.633cm;" class="odt-zoomable" data-zoom-src="images/10000000000003F2000000C77329320D.png" /></td></tr></table>
 
 <ul>
-  <li>该过滤器可以在目标方法 M 之前、之后，或两者同时执行。
+  <li>过滤器可以在目标 M 方法之前、之后或两者都执行。
   </li>
-  <li>方法 M 并不知道这些过滤器。它们在 Spring 配置文件中定义。
+  <li>M方法会忽略这些过滤器的存在。这些过滤器在Spring配置文件中定义。
   </li>
-  <li>方法 M 的代码不会被修改。过滤器是必须实现的 Java 类。Spring 提供了预定义的过滤器，特别是用于管理 DBMS 事务的过滤器。
+  <li>M方法的代码不会被修改。过滤器是需要构建的Java类。Spring提供了预定义的过滤器，特别是用于管理SGBD事务的过滤器。
   </li>
   <li>过滤器是 Bean，因此作为 Bean 在 Spring 配置文件中进行定义。
   </li>
 </ul>
 
-<p>一个常见的过滤器是事务过滤器。假设业务层中有一个方法 M，它对数据执行两项不可分割的操作（即一个工作单元）。它调用 DAO 层中的两个方法 M1 和 M2 来执行这两项操作。</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000231000001018A4A6B06.png" width="281" height="129" style="display:inline-block; margin:4px;width:7.422cm;height:3.401cm;" class="odt-zoomable" data-zoom-src="images/1000000000000231000001018A4A6B06.png" /></td></tr></table>
+<p>一种常见的过滤器是事务过滤器。 假设业务层有一个方法 M，该方法对数据执行两项不可分割的操作（工作单元）。它调用 DAO 层中的两个方法 M1 和 M2 来完成这两项操作。</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000231000001018A4A6B06.png" width="281" height="129" style="display:inline-block; margin:4px;width:7.422cm;height:3.401cm;" class="odt-zoomable" data-zoom-src="images/1000000000000231000001018A4A6B06.png" /></td></tr></table>
 
-<p>由于位于业务层，方法 M 抽象了底层数据存储。例如，它无需假设数据存储在数据库管理系统（DBMS）中，也无需将对方法 M1 和 M2 的调用封装在 DBMS 事务中。这些细节应由 DAO 层来处理。 针对上述问题的一个解决方案是在 DAO 层创建一个方法，该方法自身调用 M1 和 M2 方法，并将这些调用封装在 DBMS 事务中。</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000034300000139582C97DF.png" width="418" height="157" style="display:inline-block; margin:4px;width:11.047cm;height:4.142cm;" class="odt-zoomable" data-zoom-src="images/100000000000034300000139582C97DF.png" /></td></tr></table>
+<p>由于位于业务层，方法 M 忽略了这些数据的存储介质。例如，它无需 需要假设数据位于 SGBD 中，并将其对 M1 和 M2 方法的两次调用置于 SGBD 的事务中。 这些细节应由 DAO 层负责处理。 因此，解决上述问题的方案是在 DAO 层创建一个方法，该方法将自行调用 M1 和 M2 方法， 并将这些调用封装在 SGBD 的事务中。</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000034300000139582C97DF.png" width="418" height="157" style="display:inline-block; margin:4px;width:11.047cm;height:4.142cm;" class="odt-zoomable" data-zoom-src="images/100000000000034300000139582C97DF.png" /></td></tr></table>
 
-<p>基于AOP的过滤方案更为灵活。它允许您定义一个过滤器，该过滤器在调用M之前会启动事务，并在调用结束后根据情况执行提交或回滚。</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000540000000DEF56BFCBF.png" width="672" height="111" style="display:inline-block; margin:4px;width:17.78cm;height:2.937cm;" class="odt-zoomable" data-zoom-src="images/1000000000000540000000DEF56BFCBF.png" /></td></tr></table>
+<p>AOP 的过滤方案更为灵活。它允许定义一个过滤器，该过滤器将在调用 M 之前启动一个事务，并在调用结束后根据具体情况执行提交或回滚。</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000540000000DEF56BFCBF.png" width="672" height="111" style="display:inline-block; margin:4px;width:17.78cm;height:2.937cm;" class="odt-zoomable" data-zoom-src="images/1000000000000540000000DEF56BFCBF.png" /></td></tr></table>
 
 <p>这种方法有以下几个优点：</p>
 <ul>
-  <li>一旦定义了过滤器，它就可以应用于多个方法，例如所有需要事务的方法
+  <li>一旦定义了过滤器，即可将其应用于多个方法，例如所有需要事务的方法
   </li>
   <li>经过筛选的方法无需重写
   </li>
-  <li>由于要使用的过滤器是通过配置定义的，因此可以进行更改
+  <li>由于要使用的过滤器通过配置定义，因此可以随时更改
   </li>
 </ul>
 
-<p>除了 IoC 和 AOP 概念外，Spring 还为三层应用程序提供了大量支持类：</p>
+<p>除了 IoC 和 AOP 这些概念外，Spring 还为三层应用提供了许多支持类：</p>
 <ul>
-  <li>在 DAO 层中，支持 JDBC、SQLMap (iBatis)、Hibernate 和 JDO (Java Data Object)
+  <li>在 DAO 层中，针对 JDBC 的 SqlMap（iBatis）、Hibernate 的 JDO（Java Data Object）
   </li>
-  <li>在用户界面层支持 MVC 模型
+  <li>在用户界面层中，MVC 用于模型
   </li>
 </ul>
 
-<p>更多信息请参见：http://www.springframework.org。</p>
+<p>更多信息请访问：http://www.springframework.org。</p>
 
 
 

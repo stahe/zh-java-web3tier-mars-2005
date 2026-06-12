@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://stahe.github.io/zh-java-web3tier-mars-2005/ieun.html">
       
       
-        <link rel="prev" href="i2iao---anengwebiaouhii.html">
+        <link rel="prev" href="i-2-iao---aneng-web-iaouhii.html">
       
       
-        <link rel="next" href="uu.html">
+        <link rel="next" href="uian.html">
       
       
         
@@ -56,6 +56,8 @@
     
     
       <link rel="stylesheet" href="stylesheets/focus.css">
+    
+      <link rel="stylesheet" href="stylesheets/bidi.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -330,14 +332,14 @@
   
   
     <li class="md-nav__item">
-      <a href="i-1-ian---spring-ioc.html" class="md-nav__link">
+      <a href="i-1-hang---spring-ioc.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. 第 1 篇 - Spring IoC
+    2. 第 1 章 - Spring IoC
   
 
     
@@ -357,14 +359,14 @@
   
   
     <li class="md-nav__item">
-      <a href="i2iao---anengwebiaouhii.html" class="md-nav__link">
+      <a href="i-2-iao---aneng-web-iaouhii.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    3. 第2条 - 三层Web架构示例
+    3. 第 2 条 - 三层 Web 架构示例
   
 
     
@@ -421,14 +423,14 @@
   
   
     <li class="md-nav__item">
-      <a href="uu.html" class="md-nav__link">
+      <a href="uian.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    5. 附录
+    5. 附件
   
 
     
@@ -459,17 +461,17 @@
 
 
 <h1 id="4">4. <span style="color: #365f91">结论</span></h1>
-<p>让我们回顾一下我们的目标。我们希望构建以下三层 MVC Web 应用程序：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006F3000001EB3885D79F.png" width="680" height="188" style="display:inline-block; margin:4px;width:17.997cm;height:4.967cm;" class="odt-zoomable" data-zoom-src="images/10000000000006F3000001EB3885D79F.png" /></td></tr></table>
+<p>回顾一下我们的目标。我们希望构建一个具有以下三层结构的 Web 应用程序 MVC：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000006F3000001EB3885D79F.png" width="680" height="188" style="display:inline-block; margin:4px;width:17.997cm;height:4.967cm;" class="odt-zoomable" data-zoom-src="images/10000000000006F3000001EB3885D79F.png" /></td></tr></table>
 
 <ul>
-  <li>模型已经就位。在所有三种拟议的解决方案中，它都被以完全相同的方式使用
+  <li>模型部分已确定。在提出的三个方案中，该模型均被以相同方式使用
   </li>
-  <li>由于严格保持了层间独立性，[Web]层可以采用三种不同的方式实现，而不会影响模型。我们仅在[Web]层内进行开发。
+  <li>由于严格遵循了各层的独立性，[web]层可以在不触及模型的情况下通过三种不同方式实现。我们仅在[web]这一层上进行了开发。
   </li>
-  <li>这三种方案非常相似。在第一种方案中，我们使用了一个包含每个操作对应一个方法的单一Servlet；而在另外两种方案中，虽然同样使用了一个单一Servlet，但去除了操作处理方法，相关处理由独立的类来完成。这些类的作用与第一种方案中方法的作用完全一致。
+  <li>这三种方案非常相似。在第一种方案中，我们使用了一个单一的Servlet，其中每个待处理的操作都对应一个方法；而在另外两种方案中，虽然同样使用了一个单一的Servlet，但该Servlet已不再包含操作处理方法，这些处理工作现在由独立的类来完成。这些类的角色与第一种方案中的方法完全一致。
   </li>
-  <li>在此应用程序中使用 [Spring]，使我们能够选择实现 [domain] 和 [dao] 层 Java 接口的类。这些实现类可以在同一层内进行更改，而不会对其他层产生任何影响。 只需修改 Spring 配置文件即可。因此，目前由 [sqlMap] 工具处理的 [DAO] 层，可以改由 [Hibernate] 工具处理。这将影响 [DAO] 层，但不会对 [Web] 和 [Domain] 层产生任何影响。
+  <li>在该应用中使用 [Spring]，使我们能够自由选择 [domain] 和 [dao] 层中 Java 接口的实现类。这些实现类可在某一层中进行更改，而不会对其他层产生任何影响。 只需修改 Spring 的配置文件即可。因此，此处由工具 [sqlMap] 实现的 [dao] 层，也可以由工具 [Hibernate] 来实现。 这将影响 [dao] 层，但完全不会影响 [web] 和 [domain] 层。
   </li>
 </ul>
 
